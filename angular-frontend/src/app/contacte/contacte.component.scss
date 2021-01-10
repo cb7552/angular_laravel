@@ -1,0 +1,126 @@
+#btnTop 
+{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnTop svg
+{
+    width: 30px;
+    height: 30px;
+}
+.div-spacer 
+{
+    display: block;
+    clear: both;
+    height: 20px;
+}
+
+.row
+{
+    height: 100%;
+}
+.descripcioContacte
+{
+    background-color: whitesmoke;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 10px;
+    height: 100%;
+    width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+.descripcioContacte h4
+{
+    color: rgb(31, 206, 69);
+}
+.descripcioContacte ul
+{
+    list-style: none;
+    text-align: left;
+}
+.descripcioContacte ul li
+{
+    margin-right: 30px;
+}
+.descripcioContacte ul li:before
+{
+    content: '✓';
+    color: rgb(31, 206, 69);
+}
+form
+{
+    background-color: whitesmoke;
+    padding: 20px;
+}
+#formContact
+{
+    margin: 0 auto;
+}
+#formContact h5
+{
+    text-align: center;
+}
+small svg
+{
+    color: rgb(31, 206, 69);
+    width: 15px;
+    height: 15px;
+}
+
+p, li, label, #formContact
+{
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+.titolPosicionament
+{
+    border-bottom: 1px solid rgb(180, 180, 180); 
+    line-height: 0.1em;
+    margin: 0 auto;
+}
+.titolPosicionament span
+{
+    padding: 0 10px;
+    background-color: white;
+
+}
+@media screen and (max-width: 970px)
+{
+    .titolPosicionament span
+    {
+        line-height: 1.5!important;
+        padding: 0!important;
+        background-color: inherit;
+    }
+}
+.titol svg
+{
+    width: 25px;
+    height: 25px;
+    color: blue;
+    margin-bottom: 5px;
+}
+.subtitolPosicionament
+{
+    color: rgb(31, 206, 69);
+    font-weight: bold;
+}
+.contingut
+{
+    margin: 5px;
+}
+.departament h4
+{
+    color: rgb(31, 206, 69);
+    font-weight: bold;
+}

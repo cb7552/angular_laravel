@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-sm-8 center">
+        <h1 style="text-align: center;">Super Administrator</h1>
+    </div>
+    <div class="col-sm-4">
+        <div class="col-md-6 offset-md-3 logo">
+            <div class="form-group" [formGroup]="imgForm"  style="padding: 50px;">
+                <input  class="btnimg" type="image" src="{{previewUrl}}" width="150px" height="150" (click)="clickimg()"/>
+                <div class="form-group">
+                    <button id="submit" class="btn btn-warning" (click)="onSubmit()"  style="width:150px">Upload</button>
+                </div>
+                <input 
+                    formControlName="imgfile"
+                    type="file" name="image" 
+                    (change)="onfileChange($event)" 
+                    id="my_file" 
+                    style="display: none;" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dropdown-divider"></div>
+<div class="row">
+    <!-- <button (click)="openConfirmationDialog()" type="button" class="btn btn-primary">Open dialog</button> -->
+    <div class="create-client col-sm-6">
+        <h3>Customers</h3>
+        <div class="dropdown-divider"></div>
+        <button class="btn btn-success" (click)="createclient()">
+            <h4>Create Client</h4>
+        </button>
+        <table class="table table-hover">
+            <tr *ngFor="let user of users; index as i">
+                <td><button class="btn" (click)="getuser(user.rowid)">{{user.nom}}</button></td>
+                <td><button class="btn btn-primary" (click)="editclient(user.rowid)">Edit</button></td>
+                <td><button class="btn btn-danger" (click)="deleteclient(user.rowid)">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="create-administrator col-sm-6">
+        <h3>Administrators</h3>
+        <div class="dropdown-divider"></div>
+        <button class="btn btn-success" (click)="createworker()">
+            <h4>Create Administrator</h4>
+        </button>
+        <table class="table table-hover">
+            <tr *ngFor="let worker of workers; index as i">
+                <td><button class="btn" (click)="getworker(worker.rowid)">{{worker.nom}}</button></td>
+                <td><button class="btn btn-primary" (click)="editclient(worker.rowid)">Edit</button></td>
+                <td><button class="btn btn-danger" (click)="deleteclient(worker.rowid)">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+</div>

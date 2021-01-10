@@ -1,0 +1,35 @@
+.div-spacer 
+{
+    display: block;
+    clear: both;
+    height: 20px;
+}
+.avisLegal
+{
+    background-color: whitesmoke;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 10px;
+    height: 100%;
+    width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+.avisLegal ul
+{
+    list-style: none;
+    text-align: left;
+}
+.avisLegal ul li
+{
+    margin-right: 30px;
+}
+.avisLegal ul li:before
+{
+    content: '✓';
+    color: rgb(31, 206, 69);
+}
+li
+{
+    font-family: 'Montserrat';
+    font-size: 15px;
+}

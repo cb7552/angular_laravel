@@ -1,0 +1,148 @@
+<div class="background row d-flex justify-content-center align-items-center">
+	<div class="col-md-8 mb-md-0 mb-3 d-flex justify-content-center">
+		<div class="card">
+			<div class="card-header text-left">
+				<h3>Create your Client</h3>
+				<hr>
+			</div>
+			<div class="card-body">
+				<small class="form-text">Required fields</small>
+				<br>
+				<form (ngSubmit)="onSubmit()" [formGroup]="form">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputNomFiscal">Tax name</label>
+							<input type="text" class="form-control" id="inputNomFiscal" placeholder="Tax name of the compamy" name="nom" [(ngModel)]="client.nom"
+							formControlName="nomFiscal" [ngClass]="{'is-invalid' : form.get('nomFiscal').touched && form.get('nomFiscal').invalid}">
+							<div class="invalid-feedback">
+								This field is required.
+							</div>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputNomComercial">Trade name</label>
+							<input type="text" class="form-control" id="inputNomComercial" placeholder="Trade name of compamy" name="name_alias" [(ngModel)]="client.name_alias"
+							formControlName="nomComercial" [ngClass]="{'is-invalid' : form.get('nomComercial').touched && form.get('nomComercial').invalid}">
+							<div class="invalid-feedback">
+								This field is required.
+							</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputDireccio">Address</label>
+							<input type="text" class="form-control" id="inputDireccio" placeholder="Company Management" name="address" [(ngModel)]="client.address"
+							formControlName="direccio" [ngClass]="{'is-invalid' : form.get('direccio').touched && form.get('direccio').invalid}">
+							<div class="invalid-feedback">
+								This field is required.
+							</div>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputCodiPostal">Postal code</label>
+							<input type="text" class="form-control" id="inputCodiPostal" placeholder="ex:17000" name="zip" [(ngModel)]="client.zip"
+							formControlName="codiPostal" [ngClass]="{'is-invalid' : form.get('codiPostal').touched && form.get('codiPostal').invalid}">
+							<div *ngIf="form.get('codiPostal').touched && form.get('codiPostal').invalid" class="invalid-feedback">
+								<div *ngIf="form.get('codiPostal').errors?.required">This field is required.</div>
+								<div *ngIf="form.get('codiPostal').errors.pattern">{{ 'REGISTER.INVALID_FEEDBACK2' | translate }}</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputPoblacio">Population </label>
+							<input type="text" class="form-control" id="inputPoblacio" name="town" [(ngModel)]="client.town"
+							formControlName="poblacio" [ngClass]="{'is-invalid' : form.get('poblacio').touched && form.get('poblacio').invalid}">
+							<div class="invalid-feedback">
+								This field is required.
+							</div>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputProvincia">Province</label> 
+							<!-- El datalist no funcionaba por el ngModel -->
+							<select class="form-control" name="fk_departement" [(ngModel)]="client.fk_departement"
+							formControlName="provincia" [ngClass]="{'is-invalid' : form.get('provincia').touched && form.get('provincia').invalid}">
+								<option selected="selected" disabled>{{ 'REGISTER.INFO1' | translate }}</option>
+								<option *ngFor="let provincia of provincies; index as i" value="{{provincia.rowid}}">{{provincia.nom}}</option>
+							</select>
+							<div class="invalid-feedback">
+								You have to choose a province.
+							</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputPais">Country</label>
+							<select class="form-control" name="fk_pays" [(ngModel)]="client.fk_pays"
+							formControlName="pais" [ngClass]="{'is-invalid' : form.get('pais').touched && form.get('pais').invalid}">
+								<option selected="selected" disabled>{{ 'REGISTER.INFO2' | translate }}</option>
+								<option *ngFor="let pais of paisos; index as i" value="{{pais.rowid}}">{{pais.code_iso}} - {{pais.label}}</option>
+							</select>
+							<div class="invalid-feedback">
+								You have to choose a country.
+							</div>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputTelefon">Phone </label>
+							<input type="text" class="form-control" id="inputTelefon" placeholder="Contact Number" name="phone" [(ngModel)]="client.phone"
+							formControlName="telefon" [ngClass]="{'is-invalid' : form.get('telefon').touched && form.get('telefon').invalid}">
+							<div *ngIf="form.get('telefon').touched && form.get('telefon').invalid" class="invalid-feedback">
+								<div *ngIf="form.get('telefon').errors?.required">This field is required.</div>
+								<div *ngIf="form.get('telefon').errors.pattern">Please enter a valid phone number.</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputEmail">E-mail</label>
+							<input type="text" class="form-control" id="inputEmail" placeholder="E-mail" name="email" [(ngModel)]="client.email"
+							formControlName="email" [ngClass]="{'is-invalid' : form.get('email').touched && form.get('email').invalid}">
+							<div *ngIf="form.get('email').touched && form.get('email').invalid" class="invalid-feedback">
+								<div *ngIf="form.get('email').errors?.required">This field is required.</div>
+								<div *ngIf="form.get('email').errors.email">Please enter a valid email.</div>
+							</div>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputNif">CIF/NIF*</label>
+							<input type="text" class="form-control" id="inputNif" name="siren" [(ngModel)]="client.siren"
+							formControlName="cifNif" [ngClass]="{'is-invalid' : form.get('cifNif').touched && form.get('cifNif').invalid}">
+							<div *ngIf="form.get('cifNif').touched && form.get('cifNif').invalid" class="invalid-feedback">
+								<div *ngIf="form.get('cifNif').errors?.required">This field is required.</div>
+								<div *ngIf="form.get('cifNif').errors.minlength || form.get('cifNif').errors.maxlength ">Please enter a valid CIF / NIF</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputContrasenya">Password </label>
+							<input type="password" class="form-control" id="inputContrasenya" placeholder="Account password" name="password" [(ngModel)]="client.password"
+							formControlName="contrasenya" [ngClass]="{'is-invalid' : form.get('contrasenya').touched && form.get('contrasenya').invalid}">
+							<div *ngIf="form.get('contrasenya').touched && form.get('contrasenya').invalid" class="invalid-feedback">
+								<div *ngIf="form.get('contrasenya').errors?.required">This field is required.</div>
+								<div *ngIf="form.get('contrasenya').errors.minlength">Please enter a valid password. (min. 12 characters)</div>
+							</div>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputConfirmarContrasenya">Confirm password</label>
+							<input type="password" class="form-control" id="inputConfirmarContrasenya" placeholder="Confirm password" (blur)="passwdMatch()" (keyup)="passwdMatch()"
+							formControlName="confContrasenya" [ngClass]="{'is-invalid' : form.get('confContrasenya').touched && form.get('confContrasenya').invalid}">
+							<div class="invalid-feedback">
+								Passwords do not match.
+							</div>
+						</div>
+					</div>
+					<div class="form-group form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1" required
+						formControlName="acceptarPolitiques" [ngClass]="{'is-invalid' : form.get('acceptarPolitiques').touched && form.get('acceptarPolitiques').invalid}">
+						<label class="check form-check-label" for="exampleCheck1">I agree to the <a routerLink="/politica-privacitat">Privacy Policy</a>.</label>
+						<div *ngIf="form.get('acceptarPolitiques').touched && form.get('acceptarPolitiques').errors?.required" class="invalid-feedback">
+							You must accept our policies.
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Create" class="btn float-right login_btn" [disabled]="!form.valid">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+

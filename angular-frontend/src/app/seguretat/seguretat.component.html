@@ -1,0 +1,831 @@
+<button class="btn btn-dark" id="btnTop" (click)="topFunction()">
+    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+        <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8 3.707 5.354 6.354a.5.5 0 1 1-.708-.708l3-3z"/>
+      </svg>
+</button>
+<div class="imatgeInicial">
+    <img class="d-block w-100" src="../../assets/imatgesSeguretat/banner-seguretat.png" alt="Seguretat">
+    <h1>{{ 'SEGURETAT.TITLE.TITLE1' | translate }}</h1>
+    <p class="textEsquerra"><b>{{ 'SEGURETAT.CONTENT.CONTENT1_TITLE1' | translate }}</b></p>
+    <p class="textDreta"><b>{{ 'SEGURETAT.CONTENT.CONTENT2_TITLE1' | translate }}</b></p>
+</div>
+
+<div class="franja d-flex w-100 h-100 align-items-center justify-content-center">
+    <h2>{{ 'SEGURETAT.TITLE.TITLE2' | translate }}</h2>
+</div>
+<div class="imatgeLogos">
+    <img class="d-block w-100" src="../../assets/imatgesSeguretat/banner-logos.png" alt="Comodo, SiteLock, CodeGuard">
+    <h2>{{ 'SEGURETAT.TITLE.TITLE3' | translate }}</h2>
+    <a href="https://ssl.comodo.com/" target="blank" class="comodo">Comodo</a>
+    <a href="https://www.sitelock.com/" target="blank" class="sitelock">SiteLock</a>
+    <a href="https://www.codeguard.com/" target="blank" class="codeguard">CodeGuard</a>
+</div>
+<div class="franja d-flex w-100 h-100 align-items-center justify-content-center">
+    <a class="btnVeurePlans btn btn-success ml-2" href="/ciberseguretat#comodo" role="button">{{ 'SEGURETAT.CONTENT.BUTTON_PLANS1' | translate }}</a>
+    <a class="btnVeurePlans btn btn-success ml-2" href="/ciberseguretat#sitelock" role="button">{{ 'SEGURETAT.CONTENT.BUTTON_PLANS2' | translate }}</a>
+    <a class="btnVeurePlans btn btn-success ml-2 mr-1" href="/ciberseguretat#codeguard" role="button">{{ 'SEGURETAT.CONTENT.BUTTON_PLANS3' | translate }}</a>
+</div>
+
+<div class="row d-flex justify-content-center">
+    <div class="descripcioSeguretat col-12">
+        <br>
+        <h3><b>{{ 'SEGURETAT.TITLE.TITLE_BLOCK1' | translate }}</b></h3>
+        <br>
+        <br>
+        <ul>
+            <li>{{ 'SEGURETAT.CONTENT.BLOCK1_CONTENT1' | translate }}</li>
+            <br>
+            <li>{{ 'SEGURETAT.CONTENT.BLOCK1_CONTENT2' | translate }}</li>
+            <br>
+            <li>{{ 'SEGURETAT.CONTENT.BLOCK1_CONTENT3' | translate }}</li>
+            <br>
+            <li>{{ 'SEGURETAT.CONTENT.BLOCK1_CONTENT4' | translate }}</li>
+            <br>
+            <li>{{ 'SEGURETAT.CONTENT.BLOCK1_CONTENT5_1' | translate }}<a routerLink="/manteniments-informatics">{{ 'SEGURETAT.CONTENT.BLOCK1_LINK_CONTENT5' | translate }}</a>{{ 'SEGURETAT.CONTENT.BLOCK1_CONTENT5_2' | translate }}</li>
+        </ul>
+    </div>
+</div>
+
+<div class="div-spacer" id="comodo"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<h4 class="titolPosicionament text-center w-50"><span>{{ 'SEGURETAT.TITLE.TITLE_COMODO' | translate }}</span></h4>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center">
+    <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.TITLE.SUBTITLE1_COMODO' | translate }}</h5>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.BLOCK_COMODO1' | translate }}</p>
+    </div>
+    <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.TITLE.SUBTITLE2_COMODO' | translate }}</h5>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.BLOCK_COMODO2' | translate }}</p>
+    </div>
+    <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.TITLE.SUBTITLE3_COMODO' | translate }}</h5>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.BLOCK_COMODO3' | translate }}</p>
+    </div>
+</div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center align-items-center">
+    <div class="planSeguretat col-xl-2 col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titolPlanSeguretat d-flex align-items-center justify-content-center">
+            <h4>POSITIVE SSL</h4>
+        </div>
+        <br>
+        <div class="preuPlanSeguretat d-flex align-items-center justify-content-center">
+            <h3>{{ 'SEGURETAT.TITLE.PREU_PLAN_COMODO1' | translate }}</h3>
+        </div>
+        <br>
+        <ul>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO1_CONTENT1' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO1_CONTENT2' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO1_CONTENT3' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO1_CONTENT4' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO1_CONTENT5' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO1_CONTENT6' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO1_CONTENT7' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO1_CONTENT8' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO1_CONTENT9' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO1_CONTENT10' | translate }}</span></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <div class="planFooter">
+            <hr>
+            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'SEGURETAT.CONTENT.BUTTON_CONTACTE' | translate }}</button>
+        </div>
+    </div>
+    <div class="planSeguretat col-xl-2 col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titolPlanSeguretat d-flex align-items-center justify-content-center">
+            <h4 >COMODO SSL</h4>
+        </div>
+        <br>
+        <div class="preuPlanSeguretat d-flex align-items-center justify-content-center">
+            <h3>{{ 'SEGURETAT.TITLE.PREU_PLAN_COMODO2' | translate }}</h3>
+        </div>
+        <br>
+        <ul>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO2_CONTENT1' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO2_CONTENT2' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO2_CONTENT3' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO2_CONTENT4' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO2_CONTENT5' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO2_CONTENT6' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO2_CONTENT7' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO2_CONTENT8' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO2_CONTENT9' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO2_CONTENT10' | translate }}</span></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <div class="planFooter">
+            <hr>
+            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'SEGURETAT.CONTENT.BUTTON_CONTACTE' | translate }}</button>
+        </div>
+    </div>
+    <div class="planSeguretat col-xl-2 col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titolPlanSeguretat d-flex align-items-center justify-content-center">
+            <h4>WILDCARD SSL</h4>
+        </div>
+        <br>
+        <div class="preuPlanSeguretat d-flex align-items-center justify-content-center">
+            <h3>{{ 'SEGURETAT.TITLE.PREU_PLAN_COMODO3' | translate }}</h3>
+        </div>
+        <br>
+        <ul>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO3_CONTENT1' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO3_CONTENT2' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO3_CONTENT3' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO3_CONTENT4' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO3_CONTENT5' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO3_CONTENT6' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO3_CONTENT7' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO3_CONTENT8' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO3_CONTENT9' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO3_CONTENT10' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO3_CONTENT11' | translate }}</span></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <div class="planFooter align-self-end">
+            <hr>
+            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'SEGURETAT.CONTENT.BUTTON_CONTACTE' | translate }}</button>
+        </div>
+    </div>
+    <div class="planSeguretat col-xl-2 col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titolPlanSeguretat d-flex align-items-center justify-content-center">
+            <h4>EV SSL</h4>
+        </div>
+        <br>
+        <div class="preuPlanSeguretat d-flex align-items-center justify-content-center">
+            <h3>{{ 'SEGURETAT.TITLE.PREU_PLAN_COMODO4' | translate }}</h3>
+        </div>
+        <br>
+        <ul>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO4_CONTENT1' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO4_CONTENT2' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO4_CONTENT3' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO4_CONTENT4' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO4_CONTENT5' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO4_CONTENT6' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO4_CONTENT7' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO4_CONTENT8' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO4_CONTENT9' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO4_CONTENT10' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_COMODO4_CONTENT11' | translate }}</span></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <div class="planFooter align-self-end">
+            <hr>
+            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'SEGURETAT.CONTENT.BUTTON_CONTACTE' | translate }}</button>
+        </div>
+    </div>
+</div>
+
+<div class="div-spacer" id="sitelock"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<h4 class="titolPosicionament text-center w-50"><span>{{ 'SEGURETAT.TITLE.TITLE_SITELOCK' | translate }}</span></h4>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center">
+    <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.TITLE.SUBTITLE1_SITELOCK' | translate }}</h5>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.BLOCK_SITELOCK1' | translate }}</p>
+    </div>
+    <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.TITLE.SUBTITLE2_SITELOCK' | translate }}</h5>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.BLOCK_SITELOCK2' | translate }}</p>
+    </div>
+    <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.TITLE.SUBTITLE3_SITELOCK' | translate }}</h5>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.BLOCK_SITELOCK3' | translate }}</p>
+    </div>
+</div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center align-items-center">
+    <div class="planSeguretat2 col-md-3 mb-md-0 mb-3 text-center">
+        <div class="titolPlanSeguretat d-flex align-items-center justify-content-center">
+            <h4>PROFESSIONAL</h4>
+        </div>
+        <br>
+        <div class="preuPlanSeguretat d-flex align-items-center justify-content-center">
+            <h3>{{ 'SEGURETAT.TITLE.PREU_PLAN_SITELOCK1' | translate }}</h3>
+        </div>
+        <br>
+        <ul>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK1_CONTENT1' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK1_CONTENT2' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK1_CONTENT3' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK1_CONTENT4' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK1_CONTENT5' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK1_CONTENT6' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK1_CONTENT7' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK1_CONTENT8' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK1_CONTENT9' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK1_CONTENT10' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK1_CONTENT11' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK1_CONTENT12' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK1_CONTENT13' | translate }}</span></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="planFooter">
+            <hr>
+            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'SEGURETAT.CONTENT.BUTTON_CONTACTE' | translate }}</button>
+        </div>
+    </div>
+    <div class="planSeguretat2 col-md-3 mb-md-0 mb-3 text-center">
+        <div class="titolPlanSeguretat d-flex align-items-center justify-content-center">
+            <h4>PREMIUM</h4>
+        </div>
+        <br>
+        <div class="preuPlanSeguretat d-flex align-items-center justify-content-center">
+            <h3>{{ 'SEGURETAT.TITLE.PREU_PLAN_SITELOCK2' | translate }}</h3>
+        </div>
+        <br>
+        <ul>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK2_CONTENT1' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK2_CONTENT2' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK2_CONTENT3' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK2_CONTENT4' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK2_CONTENT5' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK2_CONTENT6' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK2_CONTENT7' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK2_CONTENT8' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK2_CONTENT9' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK2_CONTENT10' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK2_CONTENT11' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK2_CONTENT12' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK2_CONTENT13' | translate }}</span></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="planFooter">
+            <hr>
+            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'SEGURETAT.CONTENT.BUTTON_CONTACTE' | translate }}</button>
+        </div>
+    </div>
+    <div class="planSeguretat2 col-md-3 mb-md-0 mb-3 text-center">
+        <div class="titolPlanSeguretat d-flex align-items-center justify-content-center">
+            <h4>ENTERPRISE</h4>
+        </div>
+        <br>
+        <div class="preuPlanSeguretat d-flex align-items-center justify-content-center">
+            <h3>{{ 'SEGURETAT.TITLE.PREU_PLAN_SITELOCK3' | translate }}</h3>
+        </div>
+        <br>
+        <ul>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK3_CONTENT1' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK3_CONTENT2' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK3_CONTENT3' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK3_CONTENT4' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK3_CONTENT5' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK3_CONTENT6' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK3_CONTENT7' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK3_CONTENT8' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK3_CONTENT9' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK3_CONTENT10' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK3_CONTENT11' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK3_CONTENT12' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_SITELOCK3_CONTENT13' | translate }}</span></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="planFooter align-self-end">
+            <hr>
+            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'SEGURETAT.CONTENT.BUTTON_CONTACTE' | translate }}</button>
+        </div>
+    </div>
+</div>
+
+<div class="div-spacer" id="codeguard"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<h4 class="titolPosicionament text-center w-50" ><span>{{ 'SEGURETAT.TITLE.TITLE_CODEGUARD' | translate }}</span></h4>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center">
+    <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.TITLE.SUBTITLE1_CODEGUARD' | translate }}</h5>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.BLOCK_CODEGUARD1' | translate }}</p>
+    </div>
+    <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.TITLE.SUBTITLE2_CODEGUARD' | translate }}</h5>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.BLOCK_CODEGUARD2' | translate }}</p>
+    </div>
+    <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.TITLE.SUBTITLE3_CODEGUARD' | translate }}</h5>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.BLOCK_CODEGUARD3' | translate }}</p>
+    </div>
+</div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center align-items-center">
+    <div class="planSeguretat3 col-xl-3 col-md-5 mb-md-0 mb-3 text-center">
+        <div class="titolPlanSeguretat d-flex align-items-center justify-content-center">
+            <h4>PROFESSIONAL</h4>
+        </div>
+        <br>
+        <div class="preuPlanSeguretat d-flex align-items-center justify-content-center">
+            <h3>{{ 'SEGURETAT.TITLE.PREU_PLAN_CODEGUARD1' | translate }}</h3>
+        </div>
+        <br>
+        <ul>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD1_CONTENT1' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD1_CONTENT2' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD1_CONTENT3' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD1_CONTENT4' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD1_CONTENT5' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD1_CONTENT6' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD1_CONTENT7' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD1_CONTENT8' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD1_CONTENT9' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD1_CONTENT10' | translate }}</span></li>
+        </ul>
+        <div class="planFooter">
+            <hr>
+            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'SEGURETAT.CONTENT.BUTTON_CONTACTE' | translate }}</button>
+        </div>
+    </div>
+    <div class="planSeguretat3 col-xl-3 col-md-5 mb-md-0 mb-3 text-center">
+        <div class="titolPlanSeguretat d-flex align-items-center justify-content-center">
+            <h4>PREMIUM</h4>
+        </div>
+        <br>
+        <div class="preuPlanSeguretat d-flex align-items-center justify-content-center">
+            <h3>{{ 'SEGURETAT.TITLE.PREU_PLAN_CODEGUARD2' | translate }}</h3>
+        </div>
+        <br>
+        <ul>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD2_CONTENT1' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD2_CONTENT2' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD2_CONTENT3' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD2_CONTENT4' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD2_CONTENT5' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD2_CONTENT6' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD2_CONTENT7' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD2_CONTENT8' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD2_CONTENT9' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD2_CONTENT10' | translate }}</span></li>
+        </ul>
+        <div class="planFooter">
+            <hr>
+            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'SEGURETAT.CONTENT.BUTTON_CONTACTE' | translate }}</button>
+        </div>
+    </div>
+    <div class="planSeguretat3 col-xl-3 col-md-5 mb-md-0 mb-3 text-center">
+        <div class="titolPlanSeguretat d-flex align-items-center justify-content-center">
+            <h4>ENTERPRISE</h4>
+        </div>
+        <br>
+        <div class="preuPlanSeguretat d-flex align-items-center justify-content-center">
+            <h3>{{ 'SEGURETAT.TITLE.PREU_PLAN_CODEGUARD3' | translate }}</h3>
+        </div>
+        <br>
+        <ul>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD3_CONTENT1' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD3_CONTENT2' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD3_CONTENT3' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD3_CONTENT4' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD3_CONTENT5' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD3_CONTENT6' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD3_CONTENT7' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD3_CONTENT8' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD3_CONTENT9' | translate }}</span></li>
+            <li><span>{{ 'SEGURETAT.CONTENT.PLAN_CODEGUARD3_CONTENT10' | translate }}</span></li>
+        </ul>
+        <div class="planFooter align-self-end">
+            <hr>
+            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'SEGURETAT.CONTENT.BUTTON_CONTACTE' | translate }}</button>
+        </div>
+    </div>
+</div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="imatgeComodo">
+    <div class="textComodo">
+        <h4 class="titolComodo">{{ 'SEGURETAT.TITLE.TITLE_IMG1' | translate }}</h4>
+        <p class="primerParraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.CONTENT.IMG1_CONTENT1' | translate }}</p>
+        <p class="segonParraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.CONTENT.IMG1_CONTENT2' | translate }}</p>
+        <p class="tercerParraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.CONTENT.IMG1_CONTENT3' | translate }}</p>
+        <div class="llista text-left">
+            <ul>
+                <li><b>{{ 'SEGURETAT.CONTENT.IMG1_CONTENT4_LISTITEM1' | translate }}</b></li>
+                <li><b>{{ 'SEGURETAT.CONTENT.IMG1_CONTENT4_LISTITEM2' | translate }}</b></li>
+                <li><b>{{ 'SEGURETAT.CONTENT.IMG1_CONTENT4_LISTITEM3' | translate }}</b></li>
+                <li><b>{{ 'SEGURETAT.CONTENT.IMG1_CONTENT4_LISTITEM4' | translate }}</b></li>
+                <li><b>{{ 'SEGURETAT.CONTENT.IMG1_CONTENT4_LISTITEM5' | translate }}</b></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="imatgeSitelock">
+    <div class="textSitelock">
+        <h4 class="titolSitelock">{{ 'SEGURETAT.TITLE.TITLE_IMG2' | translate }}</h4>
+        <p class="primerParraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.CONTENT.IMG2_CONTENT1' | translate }}</p>
+        <p class="segonParraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.CONTENT.IMG2_CONTENT2' | translate }}</p>
+    </div>
+</div>
+
+<div class="imatgeCodeguard">
+    <div class="textCodeguard">
+        <h4 class="titolCodeguard">{{ 'SEGURETAT.TITLE.TITLE_IMG3' | translate }}</h4>
+        <p class="primerParraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.CONTENT.IMG3_CONTENT1' | translate }}</p>
+        <p class="segonParraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg><b>{{ 'SEGURETAT.CONTENT.IMG3_CONTENT2_BOLD' | translate }}</b>
+            {{ 'SEGURETAT.CONTENT.IMG3_CONTENT2' | translate }}
+            </p>
+    </div>
+</div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<h4 class="titolPosicionament text-center w-50"><span>{{ 'SEGURETAT.TITLE.TITLE4' | translate }}</span></h4>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center">
+    <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="icone bi bi-cart-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M11.354 5.646a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+          </svg>
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                </svg>{{ 'SEGURETAT.TITLE.SUBTITLE1_SERVEIS' | translate }}</h5>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.CONTENT1_SERVEIS' | translate }}
+        </p>
+    </div>
+    <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="icone bi bi-tools" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M0 1l1-1 3.081 2.2a1 1 0 0 1 .419.815v.07a1 1 0 0 0 .293.708L10.5 9.5l.914-.305a1 1 0 0 1 1.023.242l3.356 3.356a1 1 0 0 1 0 1.414l-1.586 1.586a1 1 0 0 1-1.414 0l-3.356-3.356a1 1 0 0 1-.242-1.023L9.5 10.5 3.793 4.793a1 1 0 0 0-.707-.293h-.071a1 1 0 0 1-.814-.419L0 1zm11.354 9.646a.5.5 0 0 0-.708.708l3 3a.5.5 0 0 0 .708-.708l-3-3z"/>
+            <path fill-rule="evenodd" d="M15.898 2.223a3.003 3.003 0 0 1-3.679 3.674L5.878 12.15a3 3 0 1 1-2.027-2.027l6.252-6.341A3 3 0 0 1 13.778.1l-2.142 2.142L12 4l1.757.364 2.141-2.141zm-13.37 9.019L3.001 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+          </svg>
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                </svg>{{ 'SEGURETAT.TITLE.SUBTITLE2_SERVEIS' | translate }}</h5>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.CONTENT2_SERVEIS1' | translate }}<a routerLink="/manteniments-informatics">{{ 'SEGURETAT.CONTENT.CONTENT2_SERVEIS_LINK' | translate }}</a>{{ 'SEGURETAT.CONTENT.CONTENT2_SERVEIS2' | translate }}</p>
+    </div>
+    <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="icone bi bi-cloud-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+            <path fill-rule="evenodd" d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+          </svg>
+        <br>
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.TITLE.SUBTITLE3_SERVEIS' | translate }}</h5>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.CONTENT3_SERVEIS' | translate }}</p>
+    </div>
+    <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="icone bi bi-gear-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"/>
+          </svg>
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'SEGURETAT.TITLE.SUBTITLE4_SERVEIS' | translate }}</h5>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.CONTENT4_SERVEIS1' | translate }}<a routerLink="/dolibarr">{{ 'SEGURETAT.CONTENT.CONTENT4_SERVEIS_LINK' | translate }}</a>{{ 'SEGURETAT.CONTENT.CONTENT4_SERVEIS2' | translate }}</p>
+    </div>
+</div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<h4 class="titolPosicionament text-center w-50"><span>{{ 'SEGURETAT.TITLE.TITLE5' | translate }}</span></h4>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center">
+    <div class="preguntesFrequents col-10">
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'SEGURETAT.TITLE.TITLE_LISTA_PREGUNTAS_FRECUENTES1' | translate }}</b></label>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.TEXTO_LISTA_PREGUNTAS_FRECUENTES1' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'SEGURETAT.TITLE.TITLE_LISTA_PREGUNTAS_FRECUENTES2' | translate }}</b></label>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.TEXTO_LISTA_PREGUNTAS_FRECUENTES2' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'SEGURETAT.TITLE.TITLE_LISTA_PREGUNTAS_FRECUENTES3' | translate }}</b></label>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.TEXTO_LISTA_PREGUNTAS_FRECUENTES3' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'SEGURETAT.TITLE.TITLE_LISTA_PREGUNTAS_FRECUENTES4' | translate }}</b></label>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.TEXTO_LISTA_PREGUNTAS_FRECUENTES4' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'SEGURETAT.TITLE.TITLE_LISTA_PREGUNTAS_FRECUENTES5' | translate }}</b></label>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.TEXTO_LISTA_PREGUNTAS_FRECUENTES5' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'SEGURETAT.TITLE.TITLE_LISTA_PREGUNTAS_FRECUENTES6' | translate }}</b></label>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.TEXTO_LISTA_PREGUNTAS_FRECUENTES6' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'SEGURETAT.TITLE.TITLE_LISTA_PREGUNTAS_FRECUENTES7' | translate }}</b></label>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.TEXTO_LISTA_PREGUNTAS_FRECUENTES7' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'SEGURETAT.TITLE.TITLE_LISTA_PREGUNTAS_FRECUENTES8' | translate }}</b></label>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.TEXTO_LISTA_PREGUNTAS_FRECUENTES8' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'SEGURETAT.TITLE.TITLE_LISTA_PREGUNTAS_FRECUENTES9' | translate }}</b></label>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.TEXTO_LISTA_PREGUNTAS_FRECUENTES9' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'SEGURETAT.TITLE.TITLE_LISTA_PREGUNTAS_FRECUENTES10' | translate }}</b></label>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.TEXTO_LISTA_PREGUNTAS_FRECUENTES10' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'SEGURETAT.TITLE.TITLE_LISTA_PREGUNTAS_FRECUENTES11' | translate }}</b></label>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.TEXTO_LISTA_PREGUNTAS_FRECUENTES11' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'SEGURETAT.TITLE.TITLE_LISTA_PREGUNTAS_FRECUENTES12' | translate }}</b></label>
+        </div>
+        <p>{{ 'SEGURETAT.CONTENT.TEXTO_LISTA_PREGUNTAS_FRECUENTES12' | translate }}</p>
+    </div>
+</div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div id="textFinalSeguretat" class="row d-flex justify-content-center">
+    <div class="descripcioManteniments col-7">
+        <ul>
+            <li>{{ 'SEGURETAT.CONTENT.CONTENT_SEO' | translate }}
+            </li>
+        </ul>
+        <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'SEGURETAT.CONTENT.BUTTON_CONTACTE' | translate }}</button>
+    </div>
+</div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="formulariContacte row d-flex justify-content-center align-items-center">
+    <form class="form2 w-100" (ngSubmit)="enviarDadesTrucar()" [formGroup]="form2">
+      <fieldset class="w-75" id="formContact">
+        <h5>{{ 'FORMS.TITLE2' | translate }}</h5>
+        <hr>
+        <small class="form-text text-muted"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+        </svg>{{ 'FORMS.DESCRIPTION1' | translate }}</small>
+        <small class="form-text text-muted">{{ 'FORMS.DESCRIPTION2' | translate }}</small>
+        <br>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+              <label for="inputNom">{{ 'FORMS.INPUT1' | translate }}</label>
+              <input type="text" class="form-control" id="inputNom" placeholder="{{ 'FORMS.PLACEHOLDER1' | translate }}" name="nom" [(ngModel)]="dadesTrucar.nom"
+              formControlName="nom" [ngClass]="{'is-invalid' : form2.get('nom').touched && form2.get('nom').invalid}">
+                        <div class="invalid-feedback">
+                            {{ 'FORMS.INVALID_FEEDBACK1' | translate }}
+                        </div>
+          </div>
+          <div class="form-group col-md-6">
+              <label for="inputNomEmpresa">{{ 'FORMS.INPUT2' | translate }}</label>
+              <input type="text" class="form-control" id="inputNomEmpresa" placeholder="{{ 'FORMS.PLACEHOLDER2' | translate }}" name="nomEmpresa" [(ngModel)]="dadesTrucar.nomEmpresa"
+              formControlName="nomEmpresa" [ngClass]="{'is-invalid' : form2.get('nomEmpresa').touched && form2.get('nomEmpresa').invalid}">
+                        <div class="invalid-feedback">
+                            {{ 'FORMS.INVALID_FEEDBACK1' | translate }}
+                        </div>
+          </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail">{{ 'FORMS.INPUT3' | translate }}</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="{{ 'FORMS.PLACEHOLDER3' | translate }}" name="email" [(ngModel)]="dadesTrucar.email"
+                formControlName="email" [ngClass]="{'is-invalid' : form2.get('email').touched && form2.get('email').invalid}">
+							<div *ngIf="form2.get('email').touched && form2.get('email').invalid" class="invalid-feedback">
+								<div *ngIf="form2.get('email').errors?.required">{{ 'FORMS.INVALID_FEEDBACK1' | translate }}</div>
+								<div *ngIf="form2.get('email').errors.email">{{ 'FORMS.INVALID_FEEDBACK2' | translate }}</div>
+							</div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputTelefon">{{ 'FORMS.INPUT4' | translate }}</label>
+            <input type="text" class="form-control" id="inputTelefon" placeholder="{{ 'FORMS.PLACEHOLDER4' | translate }}" name="telefon" [(ngModel)]="dadesTrucar.telefon"
+            formControlName="telefon" [ngClass]="{'is-invalid' : form2.get('telefon').touched && form2.get('telefon').invalid}">
+							<div *ngIf="form2.get('telefon').touched && form2.get('telefon').invalid" class="invalid-feedback">
+								<div *ngIf="form2.get('telefon').errors?.required">{{ 'FORMS.INVALID_FEEDBACK1' | translate }}</div>
+								<div *ngIf="form2.get('telefon').errors.pattern">{{ 'FORMS.INVALID_FEEDBACK3' | translate }}</div>
+							</div>
+            </div>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" required
+          formControlName="acceptarPolitiques" [ngClass]="{'is-invalid' : form2.get('acceptarPolitiques').touched && form2.get('acceptarPolitiques').invalid}">
+          <label class="form-check-label" for="exampleCheck1">{{ 'FORMS.POLICY1' | translate }}<a routerLink="/politica-privacitat">{{ 'FORMS.POLICY3' | translate }}</a>.</label>
+          <div *ngIf="form2.get('acceptarPolitiques').touched && form2.get('acceptarPolitiques').errors?.required" class="invalid-feedback">
+            {{ 'FORMS.INVALID_FEEDBACK4' | translate }}
+        </div>
+        </div>
+        <input type="submit" class="btn btn-success" value="Enviar" [disabled]="!form2.valid">
+      </fieldset>
+      <div class="div-spacer"></div>
+      <div class="div-spacer"></div>
+    </form>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">{{ 'FORMS.TITLE1' | translate }}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form (ngSubmit)="enviarDadesContacte()" [formGroup]="form">
+                <small class="form-text text-muted"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                </svg>{{ 'FORMS.DESCRIPTION1' | translate }}</small>
+                <small class="form-text text-muted">{{ 'FORMS.DESCRIPTION2' | translate }}</small>
+                <br>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputNom">{{ 'FORMS.INPUT1' | translate }}</label>
+                        <input type="text" class="form-control" id="inputNom" placeholder="{{ 'FORMS.PLACEHOLDER1' | translate }}" name="nom" [(ngModel)]="dadesContacte.nom"
+                        formControlName="nom" [ngClass]="{'is-invalid' : form.get('nom').touched && form.get('nom').invalid}">
+                        <div class="invalid-feedback">
+                            {{ 'FORMS.INVALID_FEEDBACK1' | translate }}
+                        </div>
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                        <label for="inputNomEmpresa">{{ 'FORMS.INPUT2' | translate }}</label>
+                        <input type="text" class="form-control" id="inputNomEmpresa" placeholder="{{ 'FORMS.PLACEHOLDER2' | translate }}" name="nomEmpresa" [(ngModel)]="dadesContacte.nomEmpresa"
+                        formControlName="nomEmpresa" [ngClass]="{'is-invalid' : form.get('nomEmpresa').touched && form.get('nomEmpresa').invalid}">
+                        <div class="invalid-feedback">
+                            {{ 'FORMS.INVALID_FEEDBACK1' | translate }}
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">{{ 'FORMS.INPUT3' | translate }}</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="{{ 'FORMS.PLACEHOLDER3' | translate }}" name="email" [(ngModel)]="dadesContacte.email"
+                        formControlName="email" [ngClass]="{'is-invalid' : form.get('email').touched && form.get('email').invalid}">
+							<div *ngIf="form.get('email').touched && form.get('email').invalid" class="invalid-feedback">
+								<div *ngIf="form.get('email').errors?.required">{{ 'FORMS.INVALID_FEEDBACK1' | translate }}</div>
+								<div *ngIf="form.get('email').errors.email">{{ 'FORMS.INVALID_FEEDBACK2' | translate }}</div>
+							</div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputTelefon">{{ 'FORMS.INPUT4' | translate }}</label>
+                    <input type="text" class="form-control" id="inputTelefon" placeholder="{{ 'FORMS.PLACEHOLDER4' | translate }}" name="telefon" [(ngModel)]="dadesContacte.telefon"
+                    formControlName="telefon" [ngClass]="{'is-invalid' : form.get('telefon').touched && form.get('telefon').invalid}">
+							<div *ngIf="form.get('telefon').touched && form.get('telefon').invalid" class="invalid-feedback">
+								<div *ngIf="form.get('telefon').errors?.required">{{ 'FORMS.INVALID_FEEDBACK1' | translate }}</div>
+								<div *ngIf="form.get('telefon').errors.pattern">{{ 'FORMS.INVALID_FEEDBACK3' | translate }}</div>
+							</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="selectDepartament">{{ 'FORMS.INPUT5' | translate }}</label>
+                    <select class="form-control" id="selectDepartament" name="departament" [(ngModel)]="dadesContacte.departament"
+                    formControlName="departament" [ngClass]="{'is-invalid' : form.get('departament').touched && form.get('departament').invalid}">
+                        <option selected="selected" disabled>{{ 'FORMS.OPTION1' | translate }}</option>
+                        <option value="info">{{ 'FORMS.OPTION2' | translate }}</option>
+                        <option value="marketing">{{ 'FORMS.OPTION3' | translate }}</option>
+                        <option value="suport">{{ 'FORMS.OPTION4' | translate }}</option>
+                        <option value="comptabilitat">{{ 'FORMS.OPTION5' | translate }}</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        {{ 'FORMS.INVALID_FEEDBACK5' | translate }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputNom">{{ 'FORMS.INPUT6' | translate }}</label>
+                    <textarea class="form-control" id="textAreaInfo" rows="3" name="informacio" [(ngModel)]="dadesContacte.informacio"
+                    formControlName="informacio" [ngClass]="{'is-invalid' : form.get('informacio').touched && form.get('informacio').invalid}"></textarea>
+                    <div class="invalid-feedback">
+                        {{ 'FORMS.INVALID_FEEDBACK1' | translate }}
+                    </div>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1"required
+                    formControlName="acceptarPolitiques" [ngClass]="{'is-invalid' : form.get('acceptarPolitiques').touched && form.get('acceptarPolitiques').invalid}">
+                    <label class="form-check-label" for="exampleCheck1">{{ 'FORMS.POLICY1' | translate }}<a routerLink="/politica-privacitat" (click)="tancarPopup()">{{ 'FORMS.POLICY3' | translate }}</a>.</label>
+                    <div *ngIf="form.get('acceptarPolitiques').touched && form.get('acceptarPolitiques').errors?.required" class="invalid-feedback">
+                        {{ 'FORMS.INVALID_FEEDBACK4' | translate }}
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="tancarPopup" class="btn btn-secondary" data-dismiss="modal">{{ 'FORMS.BUTTON1' | translate }}</button>
+                    <input type="submit" value="{{ 'FORMS.BUTTON2' | translate }}" class="btn btn-success" [disabled]="!form.valid">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

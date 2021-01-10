@@ -1,0 +1,647 @@
+#btnTop 
+{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnTop svg
+{
+    width: 30px;
+    height: 30px;
+}
+.div-spacer 
+{
+    display: block;
+    clear: both;
+    height: 20px;
+}
+.franja
+{
+    background-color: black;
+    color: white;
+    min-height: 90px;
+    text-align: center;
+}
+.franja a:link
+{
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+.row
+{
+    height: 100%;
+}
+p, li, label
+{
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+
+//Imatges
+//Primera imatge
+.imatgeInicial
+{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.imatgeInicial h1
+{
+    color: black;
+    // text-shadow: -1px -1px 0 black,
+    //  1px -1px 0 black,
+    //  -1px 1px 0 black,
+    // 1px 1px 0 black;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.imatgeInicial .textEsquerra
+{
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    left: 20%;
+    width: 30%;
+}
+.imatgeInicial .textDreta
+{
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    left: 80%;
+    width: 30%;
+}
+
+@media only screen and (max-width:1080px)
+{
+    .imatgeInicial h1, .imatgeInicial .textEsquerra, .imatgeInicial .textDreta
+    {
+        display: none;
+    }
+}
+//Imatge logos
+.imatgeLogos
+{
+    position: relative;
+}
+.imatgeLogos h2
+{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imatgeLogos .comodo
+{
+    position: absolute;
+    top: 75%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+}
+.imatgeLogos .sitelock
+{
+    position: absolute;
+    top: 75%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+.imatgeLogos .codeguard
+{
+    position: absolute;
+    top: 75%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+}
+@media only screen and (max-width:885px)
+{
+    .imatgeLogos h2
+    {
+        display: none;
+    }
+}
+//Imatge Comodo
+.imatgeComodo
+{
+    background-image: url('../../assets/imatgesSeguretat/banner-comodo.png');
+    background-size: 100% 100%;
+    min-height: 70vh;
+    text-align: center;
+    color: black;
+    position: relative;
+}
+.imatgeComodo .textComodo .titolComodo
+{
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.imatgeComodo .textComodo .primerParraf
+{
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+}
+.imatgeComodo .textComodo .segonParraf
+{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+}
+.imatgeComodo .textComodo .tercerParraf
+{
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 34%;
+}
+.imatgeComodo .textComodo .llista
+{
+    position: absolute;
+    top: 65%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+}
+@media only screen and (max-width: 1366px)
+{
+    .imatgeComodo
+    {
+        min-height: 60vh !important;
+    } 
+}
+@media only screen and (max-width: 1237px)
+{
+    .imatgeComodo
+    {
+        background: none;
+        background-color: #a6eaf6;
+        text-align: center;
+        position: inherit!important;
+        min-height: inherit;
+    }
+    .imatgeComodo .textComodo .titolComodo
+    {
+        position: inherit!important;
+        transform: inherit!important;
+        padding-top: 20px;
+    }
+    .imatgeComodo .textComodo .primerParraf, .imatgeComodo .textComodo .segonParraf, .imatgeComodo .textComodo .tercerParraf
+    {
+        position: inherit!important;
+        transform: inherit!important;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .imatgeComodo .textComodo .llista
+    {
+        position: inherit!important;
+        transform: inherit!important;
+        width: 90%;
+        margin: 20px auto;
+        padding-bottom: 20px;
+    }
+}
+//Imatge Sitelock
+.imatgeSitelock
+{
+    background-image: url('../../assets/imatgesSeguretat/banner-sitelock.png');
+    background-size: 100% 100%;
+    min-height: 70vh;
+    text-align: center;
+    color: black;
+    position: relative;
+}
+.imatgeSitelock .textSitelock .titolSitelock
+{
+    position: absolute;
+    top: 7%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+.imatgeSitelock .textSitelock .primerParraf
+{
+    position: absolute;
+    top: 32%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+}
+.imatgeSitelock .textSitelock .segonParraf
+{
+    position: absolute;
+    top: 77%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    width: 43%;
+}
+@media only screen and (max-width: 1578px)
+{
+    .imatgeSitelock
+    {
+        min-height: 60vh !important;
+    }
+}
+@media only screen and (max-width: 1168px)
+{
+    .imatgeSitelock
+    {
+        background: none;
+        background-color: white;
+        text-align: center;
+        position: inherit!important;
+        min-height: inherit;
+    }
+    .imatgeSitelock .textSitelock .titolSitelock
+    {
+        position: inherit!important;
+        transform: inherit!important;
+        padding-top: 20px;
+    }
+    .imatgeSitelock .textSitelock .primerParraf, .imatgeSitelock .textSitelock .segonParraf
+    {
+        position: inherit!important;
+        transform: inherit!important;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .imatgeSitelock .textSitelock .segonParraf
+    {
+        padding-bottom: 20px;
+    }
+}
+//Imatge Codeguard
+.imatgeCodeguard
+{
+    background-image: url('../../assets/imatgesSeguretat/banner-codeguard.png');
+    background-size: 100% 100%;
+    min-height: 70vh;
+    text-align: center;
+    color: black;
+    position: relative;
+}
+.imatgeCodeguard .textCodeguard .titolCodeguard
+{
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.imatgeCodeguard .textCodeguard .primerParraf
+{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+.imatgeCodeguard .textCodeguard .segonParraf
+{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+@media only screen and (max-width: 1614px)
+{
+    .imatgeCodeguard
+    {
+        min-height: 60vh !important;
+    }
+}
+@media only screen and (max-width: 1168px)
+{
+    .imatgeCodeguard
+    {
+        background: none;
+        background-color: #9dd565;
+        text-align: center;
+        position: inherit!important;
+        min-height: inherit;
+    }
+    .imatgeCodeguard .textCodeguard .titolCodeguard
+    {
+        position: inherit!important;
+        transform: inherit!important;
+        padding-top: 20px;
+    }
+    .imatgeCodeguard .textCodeguard .primerParraf, .imatgeCodeguard .textCodeguard .segonParraf
+    {
+        position: inherit!important;
+        transform: inherit!important;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .imatgeCodeguard .textCodeguard .segonParraf
+    {
+        padding-bottom: 20px;
+    }
+}
+.imatgeComodo svg, .imatgeSitelock svg, .imatgeCodeguard svg
+{
+    color: rgb(31, 206, 69);
+    width: 25px;
+    height: 25px;
+}
+.descripcioSeguretat
+{
+    background-color: whitesmoke;
+    height: 100%;
+    width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+.descripcioSeguretat ul
+{
+    list-style: none;
+    text-align: left;
+}
+.descripcioSeguretat ul li
+{
+    margin-right: 30px;
+}
+.descripcioSeguretat ul li:before
+{
+    content: '✓';
+    color: rgb(31, 206, 69);
+}
+.titolPosicionament
+{
+    border-bottom: 1px solid rgb(180, 180, 180); 
+    line-height: 0.1em;
+    margin: 0 auto;
+}
+.titolPosicionament span
+{
+    padding: 0 10px;
+    background-color: white;
+
+}
+@media screen and (max-width: 970px)
+{
+    .titolPosicionament span
+    {
+        line-height: 1.5!important;
+        padding: 0!important;
+        background-color: inherit;
+    }
+
+    #textFinalSeguretat {
+        display: none !important;
+    }
+
+}
+.titol svg
+{
+    width: 25px;
+    height: 25px;
+    color: blue;
+    margin-bottom: 5px;
+}
+.subtitolPosicionament
+{
+    color: rgb(31, 206, 69);
+    font-weight: bold;
+}
+.planSeguretat
+{
+    border: 1px solid rgb(180, 180, 180);
+    min-height: 570px;
+    min-width: 270px;
+    height: 100%;
+    margin: 5px;
+    padding: 0;
+}
+.planSeguretat .titolPlanSeguretat
+{
+    background-color: black;
+    color: white;
+    border-top: 3px solid rgb(148, 0, 0);
+    height: 50px;   
+}
+.planSeguretat .preuPlanSeguretat
+{
+    background-color: black;
+    color: #FFC312;
+    height: 70px; 
+}
+.planSeguretat ul 
+{
+    list-style: none;
+    text-align: justify;
+}
+.planSeguretat ul li
+{
+    margin-left: -25px;
+    margin-top: 5px;
+    text-align: left;
+}
+.planSeguretat ul li span
+{
+    position: relative;
+    left: 5px;
+    text-align: left;
+}
+.planSeguretat ul li:before 
+{
+    content: '✓';
+    color: rgb(31, 206, 69);
+}
+.planSeguretat .planFooter
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 90%;
+}
+.planSeguretat2
+{
+    border: 1px solid rgb(180, 180, 180);
+    min-height: 620px;
+    height: 100%;
+    margin: 5px;
+    padding: 0;
+}
+.planSeguretat2 .titolPlanSeguretat
+{
+    background-color: black;
+    color: white;
+    border-top: 3px solid rgb(0, 174, 255);
+    height: 50px;   
+}
+.planSeguretat2 .preuPlanSeguretat
+{
+    background-color: black;
+    color: #FFC312;
+    height: 70px; 
+}
+.planSeguretat2 ul 
+{
+    list-style: none;
+    text-align: justify;
+}
+.planSeguretat2 ul li
+{
+    margin-left: -25px;
+    margin-top: 5px;
+    text-align: left;
+}
+.planSeguretat2 ul li span
+{
+    position: relative;
+    left: 5px;
+    text-align: left;
+}
+.planSeguretat2 ul li:before 
+{
+    content: '✓';
+    color: rgb(31, 206, 69);
+}
+.planSeguretat2 .planFooter
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 90%;
+}
+.planSeguretat3
+{
+    border: 1px solid rgb(180, 180, 180);
+    min-height: 580px;
+    height: 100%;
+    margin: 5px;
+    padding: 0;
+}
+.planSeguretat3 .titolPlanSeguretat
+{
+    background-color: black;
+    color: white;
+    border-top: 3px solid rgb(3, 255, 100);
+    height: 50px;   
+}
+.planSeguretat3 .preuPlanSeguretat
+{
+    background-color: black;
+    color: #FFC312;
+    height: 70px; 
+}
+.planSeguretat3 ul 
+{
+    list-style: none;
+    text-align: justify;
+}
+.planSeguretat3 ul li
+{
+    margin-left: -25px;
+    margin-top: 5px;
+    text-align: left;
+}
+.planSeguretat3 ul li span
+{
+    position: relative;
+    left: 5px;
+    text-align: left;
+}
+.planSeguretat3 ul li:before 
+{
+    content: '✓';
+    color: rgb(31, 206, 69);
+}
+.planSeguretat3 .planFooter
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 90%;
+}
+.contingut .icone
+{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    color: rgb(40, 169, 255);
+}
+.preguntesFrequents
+{
+    border-radius: 10px;
+    border: 1px solid rgb(180, 180, 180);
+    padding: 0!important;
+    height: 100%;
+}
+.preguntesFrequents .pregunta
+{
+    height: 100%;
+    background-color: whitesmoke;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+}
+.preguntesFrequents label, p
+{
+    margin: 10px;
+}
+.descripcioManteniments
+{
+    background-color: whitesmoke;
+    height: 100%;
+    width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+.descripcioManteniments ul
+{
+    list-style: none;
+    text-align: left;
+}
+.descripcioManteniments ul li
+{
+    margin-right: 30px;
+}
+.descripcioManteniments ul li:before
+{
+    content: '✓';
+    color: rgb(31, 206, 69);
+}
+.formContact
+{
+    background-color: whitesmoke;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 10px;
+    padding: 20px;
+}
+#formContact
+{
+    margin: 0 auto;
+}
+#formContact h5
+{
+    text-align: center;
+}
+.form2
+{
+    background-color: whitesmoke;
+    padding: 20px;
+}
+small svg
+{
+    color: rgb(31, 206, 69);
+    width: 15px;
+    height: 15px;
+}

@@ -1,0 +1,103 @@
+<div class="row">
+    <div class="col-sm-8 center">
+        <h1 style="text-align: center;">{{user_nom}}</h1>
+    </div>
+    <div class="col-sm-4">
+        <div class="col-md-6 offset-md-3 logo">
+            <div class="form-group" [formGroup]="imgForm"  style="padding: 50px;">
+                <input  class="btnimg" type="image" src="{{previewUrl}}" width="150px" height="150" (click)="clickimg()"/>
+                <div class="form-group">
+                    <button id="submit" class="btn btn-warning" (click)="onSubmit()"  style="width:150px">Upload</button>
+                </div>
+                <input 
+                    formControlName="imgfile"
+                    type="file" name="image" 
+                    (change)="onfileChange($event)" 
+                    id="my_file" 
+                    style="display: none;" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="dropdown-divider"></div>
+    <div class="row">
+        <div class="col-sm-3">
+            <button class="btn btn-success" (click)="edit(userid)">
+                <h4>Edit Client</h4>
+            </button>
+        </div>
+        <div class="col-sm-3">
+            <button class="btn btn-primary" (click)="getbudget(userid)">
+                <h4>Budget</h4>
+            </button>
+        </div>
+        <div class="col-sm-3">
+            <button class="btn btn-primary" (click)="getcontract(userid)">
+                <h4>Contract</h4>
+            </button>
+        </div>
+        <div class="col-sm-3">
+            <button class="btn btn-primary" (click)="getinvoice(userid)">
+                <h4>Invoice</h4>
+            </button>
+        </div>
+    </div>
+    <div class="row userdetail" [formGroup]="form">
+        <table class="table">
+            <tr>
+                <td>Tax Name</td>
+                <td>{{user_nom}}</td>
+            </tr>
+            <tr>
+                <td>Trade Name</td>
+                <td>{{user_name_alias}}</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>{{user_address}}</td>
+            </tr>
+            <tr>
+                <td>Postal code</td>
+                <td>{{user_zip}}</td>
+            </tr>
+            <tr>
+                <td>Population</td>
+                <td>{{user_town}}</td>
+            </tr>
+            <tr>
+                <td>Province</td>
+                <td>
+                    <select class="form-control" name="fk_departement" formControlName="provincia">
+                        <option selected="selected" disabled>{{ 'REGISTER.INFO1' | translate }}</option>
+                        <option *ngFor="let provincia of provincies; index as i" value="{{provincia.rowid}}">
+                            {{provincia.nom}}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select class="form-control" name="fk_pays" formControlName="pais">
+                        <option selected="selected" disabled>{{ 'REGISTER.INFO2' | translate }}</option>
+                        <option *ngFor="let pais of paisos; index as i" value="{{pais.rowid}}">{{pais.code_iso}} -
+                            {{pais.label}}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>{{user_phone}}</td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td>{{user_email}}</td>
+            </tr>
+            <tr>
+                <td>CIF/NIF*</td>
+                <td>{{user_siren}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

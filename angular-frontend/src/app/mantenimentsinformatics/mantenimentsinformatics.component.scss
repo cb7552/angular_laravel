@@ -1,0 +1,506 @@
+#btnTop 
+{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnTop svg
+{
+    width: 30px;
+    height: 30px;
+}
+.div-spacer 
+{
+    display: block;
+    clear: both;
+    height: 20px;
+}
+
+//Estils text dins de imatges
+//Primera imatge
+.imatgeInicial
+{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.imatgeInicial h1
+{
+    color: black;
+    // text-shadow: -1px -1px 0 black,
+    //  1px -1px 0 black,
+    //  -1px 1px 0 black,
+    // 1px 1px 0 black;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.imatgeInicial .textEsquerra
+{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 15%;
+    width: 25%;
+}
+.imatgeInicial .textDreta
+{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 85%;
+    width: 25%;
+}
+@media screen and (max-width: 869px)
+{
+    .imatgeInicial .textEsquerra, .textDreta, .imatgeInicial h1
+    {
+        display: none;
+    }
+    #textFinalManteniments{
+        display: none !important;
+    }
+}
+//Segona imatge
+.imatgeMantenimentOrdinadors
+{
+    background-image: url('../../assets/imatgesManteniments/banner-manteniment.png');
+    background-size: 100% 100%;
+    min-height: 70vh;
+    text-align: center;
+    color: white;
+
+}
+.imatgeMantenimentOrdinadors h4
+{
+    padding-top: 20px;
+}
+.imatgeMantenimentOrdinadors .primerParraf
+{
+    width: 85%;
+    padding-top: 15px;
+}
+.imatgeMantenimentOrdinadors .segonParraf
+{
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+@media only screen and (max-width: 1533px)
+{
+    .imatgeMantenimentOrdinadors
+    {
+        min-height: 60vh !important;
+    }  
+}
+@media screen and (max-width: 1225px)
+{
+    .imatgeMantenimentOrdinadors
+    {
+        background-image: inherit;
+        background-color: #3e7688;
+        justify-content: center;
+        min-height: inherit;
+    }
+    .imatgeMantenimentOrdinadors .primerParraf, .imatgeMantenimentOrdinadors .segonParraf
+    {
+        width: 100%!important;
+        margin: 20px auto;
+    }
+
+    .imatgeMantenimentOrdinadors .textMantenimentOrdinadors
+    {
+        margin-right: 0 !important;
+    }
+}
+
+//Tercera imatge
+.imatgeVirtualitzacioEquips
+{
+    background-image: url('../../assets/imatgesManteniments/banner-virtualitzacio.png');
+    background-size: 100% 100%;
+    min-height: 70vh;
+    text-align: center;
+    color: white;
+}
+.imatgeVirtualitzacioEquips h4
+{
+    padding-top: 20px;
+}
+.imatgeVirtualitzacioEquips .primerParraf
+{
+    width: 90%;
+    padding-top: 15px;
+}
+.imatgeVirtualitzacioEquips .segonParraf
+{
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+@media only screen and (max-width: 1533px)
+{
+    .imatgeVirtualitzacioEquips
+    {
+        min-height: 60vh !important;
+    }  
+}
+@media screen and (max-width: 1225px)
+{
+    .imatgeVirtualitzacioEquips
+    {
+        background-image: inherit;
+        background-color: #137cfc;
+        min-height: inherit;
+    }
+    .imatgeVirtualitzacioEquips .primerParraf
+    {
+        width: 100%!important;
+        margin: 20px auto;
+    }
+    .imatgeVirtualitzacioEquips .segonParraf
+    {
+        width: 100%!important;
+        margin-left: 0px;
+        margin: 20px auto;
+    }
+}
+
+//Quarta imatge
+.servidorsGoogle
+{
+    background-image: url('../../assets/imatgesManteniments/banner-servidors-nuvol.png');
+    background-size: 100% 100%;
+    min-height: 70vh;
+    text-align: center;
+    color: black;
+}
+
+.servidorsGoogle .titolServidorsGoogle {
+    padding-top: 10px;
+}
+
+// .servidorsGoogle .textServidorsGoogle .primerParraf, .servidorsGoogle .textServidorsGoogle .segonParraf
+// {
+//     width: 85%;
+// }
+
+.servidorsGoogle .textServidorsGoogle2 .cinqueParraf
+{
+    
+    margin-bottom: 20px;
+}
+
+.titolServidorsGoogle{
+    height: 4vh;
+}
+@media screen and (max-width: 1289px)
+{
+    .servidorsGoogle
+    {
+        background-image: inherit !important;
+        background-color: #7dd1fa !important;
+        justify-content: center !important;
+        align-items: center !important;
+        min-height: inherit !important;
+    }
+    .servidorsGoogle .titolServidorsGoogle, .servidorsGoogle .subtitol, .servidorsGoogle .textServidorsGoogle, .servidorsGoogle .textServidorsGoogle2
+    {
+        width: 100%!important;
+    }
+    .servidorsGoogle .titolAux
+    {
+        display: none;
+    }
+    .servidorsGoogle .textServidorsGoogle2 h5
+    {
+        margin-top: 15px;
+    }
+    .textServidorsGoogle {
+        margin-top: 20px;
+    }
+}
+//Cinquena imatge
+.imatgeGsuite
+{
+    background-image: url('../../assets/imatgesManteniments/banner-gsuite.png');
+    background-size: 100% 100%;
+    min-height: 70vh;
+    text-align: center;
+    color: black;
+    position: relative;
+}
+.imatgeGsuite .textGsuite h4
+{
+    position: absolute;
+    top: 6%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+}
+.imatgeGsuite .textGsuite .primerParraf
+{
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+.imatgeGsuite .textGsuite .segonParraf
+{
+    position: absolute;
+    top: 17%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+.imatgeGsuite .textGsuite .tercerParraf
+{
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+@media screen and (max-width: 1289px)
+{
+    .imatgeGsuite
+    {
+        background-image: inherit;
+        background-color: #00dcff;
+        text-align: center;
+        position: inherit!important;
+        min-height: inherit;
+    }
+    .imatgeGsuite .textGsuite h4
+    {
+        position: inherit!important;
+        transform: inherit!important;
+        padding-top: 20px;
+    }
+    .imatgeGsuite .textGsuite .primerParraf, .imatgeGsuite .textGsuite .segonParraf, .imatgeGsuite .textGsuite .tercerParraf
+    {
+        position: inherit!important;
+        transform: inherit!important;
+        width: 90%;
+        margin: 40px auto;
+    }
+    .imatgeGsuite .textGsuite .tercerParraf
+    {
+        padding-bottom: 40px;
+        margin: inherit !important;
+    }
+}
+.servidorsGoogle svg, .imatgeVirtualitzacioEquips svg, .imatgeMantenimentOrdinadors svg, .imatgeGsuite svg
+{
+    color: rgb(31, 206, 69);
+    width: 25px;
+    height: 25px;
+}
+.franja
+{
+    background-color: black;
+    color: white;
+    min-height: 90px;
+    text-align: center;
+}
+.franja a:link
+{
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+
+.row
+{
+    height: 100%;
+}
+.descripcioManteniments
+{
+    background-color: whitesmoke;
+    height: 100%;
+    width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+.descripcioManteniments ul
+{
+    list-style: none;
+    text-align: left;
+}
+.descripcioManteniments ul li
+{
+    margin-right: 30px;
+}
+.descripcioManteniments ul li:before
+{
+    content: '✓';
+    color: rgb(31, 206, 69);
+}
+.subtitol
+{
+    font-weight: bold;
+    color: black;
+}
+.titolPosicionament
+{
+    border-bottom: 1px solid rgb(180, 180, 180); 
+    line-height: 0.1em;
+    margin: 0 auto;
+}
+.titolPosicionament span
+{
+    padding: 0 10px;
+    background-color: white;
+
+}
+@media screen and (max-width: 970px)
+{
+    .titolPosicionament span
+    {
+        line-height: 1.5!important;
+        padding: 0!important;
+        background-color: inherit;
+    }
+}
+.titol svg
+{
+    width: 25px;
+    height: 25px;
+    color: blue;
+    margin-bottom: 5px;
+}
+.subtitolPosicionament
+{
+    color: rgb(31, 206, 69);
+    font-weight: bold;
+}
+.contingut
+{
+    margin: 5px;
+}
+.contingut .icone
+{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    color: rgb(40, 169, 255);
+}
+.plans
+{
+    border: 1px solid rgb(180, 180, 180);
+    min-height: 300px;
+    height: 100%;
+    border-radius: 5px;
+    margin: 20px;
+    position: relative;
+}
+.titolPlan
+{
+    text-align: center;
+    border: 1px solid rgb(180, 180, 180);
+    border-left: 3px solid rgb(31, 206, 69);
+    // border-right: 3px solid rgb(31, 206, 69);
+    background-color: whitesmoke;
+    height: 50px;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.titolPlan h5
+{
+    font-weight: bold;
+}
+.plans ul 
+{
+    list-style: none;
+    text-align: justify;
+}
+.plans ul li
+{
+    margin-left: -25px;
+    margin-top: 5px;
+    text-align: left;
+}
+.plans ul li span
+{
+    position: relative;
+    left: 5px;
+    text-align: left;
+}
+.plans ul li:before 
+{
+    content: '✓';
+    color: rgb(31, 206, 69);
+}
+.plans .btn
+{
+    position: absolute;
+    bottom: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 180px;
+    color: white;
+}
+p, li, label
+{
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+.preguntesFrequents
+{
+    border-radius: 10px;
+    border: 1px solid rgb(180, 180, 180);
+    padding: 0!important;
+    height: 100%;
+}
+.preguntesFrequents .pregunta
+{
+    height: 100%;
+    background-color: whitesmoke;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+}
+.preguntesFrequents label, p
+{
+    margin: 10px;
+}
+small svg
+{
+    color: rgb(31, 206, 69);
+    width: 15px;
+    height: 15px;
+}
+.formContact
+{
+    background-color: whitesmoke;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 10px;
+    padding: 20px;
+}
+#formContact
+{
+    margin: 0 auto;
+}
+#formContact h5
+{
+    text-align: center;
+}
+.form2
+{
+    background-color: whitesmoke;
+    padding: 20px;
+}

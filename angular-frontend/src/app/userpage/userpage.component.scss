@@ -1,0 +1,29 @@
+.row{
+    margin: 20px;
+}
+.btn{
+    width: 200px;
+}
+.userdetail{
+    border: 1px solid gray;
+}
+.username{
+    overflow: auto;
+    margin: 100px;
+}
+
+img{
+    // position: absolute;
+    // right: 100px;
+    float: left;
+    margin-left: 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.center{
+    margin: auto;
+}
+.btnimg{
+    border-radius: 100%;
+}

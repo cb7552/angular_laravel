@@ -1,0 +1,41 @@
+<div>
+    <div class="row">
+        <div class="col-sm-8 center">
+            <h1 style="text-align: center;">Administrator</h1>
+        </div>
+        <div class="col-sm-4">
+            <div class="col-md-6 offset-md-3 logo">
+                <img  class="btnimg"  src="{{previewUrl}}" width="150px" height="150"/>
+                <!-- <div class="form-group" [formGroup]="imgForm"  style="padding: 50px;">
+                    <input  class="btnimg" type="image" src="{{previewUrl}}" width="150px" height="150" (click)="clickimg()"/>
+                    <div class="form-group">
+                        <button id="submit" class="btn btn-warning" (click)="onSubmit()"  style="width:150px" style="display: none;">Upload</button>
+                    </div>
+                    <input 
+                        formControlName="imgfile"
+                        type="file" name="image" 
+                        (change)="onfileChange($event)" 
+                        id="my_file" 
+                        style="display: none;" />
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="dropdown-divider"></div>
+    <div class="row">
+        <h4>Your Customer is following:</h4>
+    </div>
+    <div class="row">
+        <table class="table table-striped">
+            <th>
+                <tr>Customer</tr>
+            </th>
+            <tr *ngFor="let customer of customers; index as i">
+                <td>
+                    <button class="btn" (click)="getcustomer(customer.rowid)">{{customer.nom}}</button>
+                </td>
+                <td>{{customer.email}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

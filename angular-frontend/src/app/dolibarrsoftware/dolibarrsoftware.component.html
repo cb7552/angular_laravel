@@ -1,0 +1,1089 @@
+<button class="btn btn-dark" id="btnTop" (click)="topFunction()">
+    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+        <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8 3.707 5.354 6.354a.5.5 0 1 1-.708-.708l3-3z"/>
+      </svg>
+</button>
+
+<div class="bannerDolibarr d-block w-100">
+    <img class="d-block w-100" src="../../assets/imatgesDolibarrSoftware/banner-software-dolibarr.png" alt="Dolibarr">
+
+    <div class="contingutBanner col-6 d-inline text-center">
+        <h1>{{ 'DOLIBARR.TITLE.TITLE_PRINCIPAL' | translate }}</h1><br>
+        <h2>{{ 'DOLIBARR.TITLE.TITLE_SUBTITLE' | translate }}</h2>
+        <br>
+          <p class="w-75 mx-auto"><strong>{{ 'DOLIBARR.CONTENT.TEXTO_IMAGEN_PRINCIPAL' | translate }}
+          </strong></p>
+    </div>
+</div>
+<div class="franjaDolibarr d-flex w-100 h-100 align-items-center justify-content-center">
+    <h3 class="my-auto">{{ 'DOLIBARR.TITLE.TITLE1' | translate }}</h3>
+    <a class="btnVeurePlans btn btn-success ml-4 mr-2" href="/dolibarr#plandolibarr" role="button">{{ 'DOLIBARR.BUTTON.TEXTO_VER_PLANES' | translate }}</a>
+
+</div>
+
+<div class="primeraImatge row d-flex align-items-center flex-row-reverse">
+    <div class="contingut col-md-4 mb-md-0 mb-3">
+      <h4 class="text-center">{{ 'DOLIBARR.TITLE.TITLE_PRIMERA_IMAGEN' | translate }}</h4>
+
+        <!-- <p class="parraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+            </svg>Què és Dolibarr? Sabem que és un programari, però... què fa o per a que serveix exàctament? Les raóns per
+            recomenar aquesta eina són moltes i hem tractat de resumir-les per a fer-hos la vida més fàcil.</p> -->
+        <p class="parraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+            </svg>{{ 'DOLIBARR.CONTENT.TEXTO_PRIMERA_IMAGEN' | translate }}</p>
+        <p class="parraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+            </svg>{{ 'DOLIBARR.CONTENT.TEXTO_PRIMERA_IMAGEN2' | translate }}</p>
+        <!-- <li><p class="parraf">Generalment, va enfocat a persones dates de alta com autònomes, petites/mitjanes empreses, PYMES, associacions i organismes.</p></li>
+                  <li><p class="parraf">¿Ha deixat de costat a les grans empreses? No. De fet, hi ha bons casos d'èxit dels que podriem parlar, però bastarà amb dir que una empresa gran quasi sempre té un sistema més específic, per això Dolibarr ofereix la possibilitat de programació i personalització a mesura.</p></li> -->
+        <p class="tercerParraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+            </svg>{{ 'DOLIBARR.CONTENT.TEXTO_PRIMERA_IMAGEN3' | translate }}</p>
+    </div>
+</div>
+
+<div class="dv-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<img class="d-block w-50 mx-auto" src="../../assets/imatgesBlogDolibarr/gifInicial.gif">
+
+<div class="dv-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<!-- Funcionalitat de Dolibarr -->
+  <h2 class="text-center">{{ 'DOLIBARR.TITLE.TITLE_FUNCIONALIDADES_DOLIBARR' | translate }}</h2>
+
+  <div class="div-spacer"></div>
+  <div class="div-spacer"></div>
+
+  <h3 class="titolPosicionament text-center w-75"><span>{{ 'DOLIBARR.TITLE.TITLE_COMPRAS' | translate }}</span></h3>
+
+  <div class="div-spacer"></div>
+  <div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center w-100">
+  <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_COMPRAS' | translate }}</h4>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_COMPRAS' | translate }}</p>
+  </div>
+  <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_COMPRAS2' | translate }}</h4>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_COMPRAS2' | translate }}</p>
+  </div>
+  <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_COMPRAS3' | translate }}</h4>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_COMPRAS3' | translate }}</p>
+  </div>
+</div>
+<div class="div-spacer"></div>
+<div class="row d-flex justify-content-center w-100">
+  <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_COMPRAS4' | translate }}</h4>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_COMPRAS4' | translate }}</p>
+  </div>
+  <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+    <div class="titol d-flex justify-content-center">
+        <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_COMPRAS5' | translate }}</h4>
+    </div>
+    <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_COMPRAS5' | translate }}</p>
+  </div>
+  <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+    <div class="titol d-flex justify-content-center">
+        <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_COMPRAS6' | translate }}</h4>
+    </div>
+    <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_COMPRAS6' | translate }}</p>
+  </div>
+</div>
+<div class="div-spacer"></div>
+<div class="row d-flex justify-content-center w-100">
+  <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+    <div class="titol d-flex justify-content-center">
+        <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_COMPRAS7' | translate }}</h4>
+    </div>
+    <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_COMPRAS7' | translate }}</p>
+  </div>
+  <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+    <div class="titol d-flex justify-content-center">
+        <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_COMPRAS8' | translate }}</h4>
+    </div>
+    <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_COMPRAS8' | translate }}</p>
+  </div>
+</div>
+  <div class="div-spacer"></div>
+  <div class="div-spacer"></div>
+
+
+  <h3 class="titolPosicionament text-center w-75"><span>{{ 'DOLIBARR.TITLE.TITLE_VENTAS' | translate }}</span></h3>
+  <div class="div-spacer"></div>
+  <div class="div-spacer"></div>
+  
+<div class="row d-flex justify-content-center w-100">
+  <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAS' | translate }}</h4>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAS' | translate }}</p>
+  </div>
+  <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAS2' | translate }}</h4>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAS2' | translate }}</p>
+  </div>
+  <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAS3' | translate }}</h4>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAS3' | translate }}</p>
+  </div>
+</div>
+<div class="div-spacer"></div>
+<div class="row d-flex justify-content-center w-100">
+  <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAS4' | translate }}</h4>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAS4' | translate }}</p>
+  </div>
+  <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+    <div class="titol d-flex justify-content-center">
+        <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAS5' | translate }}</h4>
+    </div>
+    <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAS5' | translate }}</p>
+  </div>
+  <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+    <div class="titol d-flex justify-content-center">
+        <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAS6' | translate }}</h4>
+    </div>
+    <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAS6' | translate }}</p>
+  </div>
+</div>
+<div class="div-spacer"></div>
+<div class="row d-flex justify-content-center w-100">
+  <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+    <div class="titol d-flex justify-content-center">
+        <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAS7' | translate }}</h4>
+    </div>
+    <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAS7' | translate }}</p>
+  </div>
+  <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+    <div class="titol d-flex justify-content-center">
+        <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAS8' | translate }}</h4>
+    </div>
+    <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAS8' | translate }}</p>
+  </div>
+</div>
+    <div class="div-spacer"></div>
+    <div class="div-spacer"></div>
+
+
+    <h3 class="titolPosicionament text-center w-75"><span>{{ 'DOLIBARR.TITLE.TITLE_CONTABILIDAD' | translate }}</span></h3>
+    <div class="div-spacer"></div>
+    <div class="div-spacer"></div>
+    
+  <div class="row d-flex justify-content-center w-100">
+    <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_CONTABILIDAD' | translate }}</h4>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_CONTABILIDAD' | translate }}</p>
+    </div>
+    <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_CONTABILIDAD2' | translate }}</h4>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_CONTABILIDAD2' | translate }}</p>
+    </div>
+    <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_CONTABILIDAD3' | translate }}</h4>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_CONTABILIDAD3' | translate }}</p>
+    </div>
+  </div>
+  <div class="div-spacer"></div>
+  <div class="row d-flex justify-content-center w-100">
+    <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_CONTABILIDAD4' | translate }}</h4>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_CONTABILIDAD4' | translate }}</p>
+    </div>
+    <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_CONTABILIDAD5' | translate }}</h4>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_CONTABILIDAD5' | translate }}</p>
+    </div>
+    <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_CONTABILIDAD6' | translate }}</h4>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_CONTABILIDAD6' | translate }}</p>
+    </div>
+  </div>
+  <div class="div-spacer"></div>
+  <div class="row d-flex justify-content-center w-100">
+    <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_CONTABILIDAD7' | translate }}</h4>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_CONTABILIDAD7' | translate }}</p>
+    </div>
+    <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_CONTABILIDAD8' | translate }}</h4>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_CONTABILIDAD8' | translate }}</p>
+    </div>
+  </div>
+    <div class="div-spacer"></div>
+    <div class="div-spacer"></div>
+
+    <h3 class="titolPosicionament text-center w-75"><span>{{ 'DOLIBARR.TITLE.TITLE_OTROS' | translate }}</span></h3>
+    <div class="div-spacer"></div>
+    <div class="div-spacer"></div>
+
+    <div class="row d-flex justify-content-center w-100">
+      <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+          <div class="titol d-flex justify-content-center">
+              <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+              </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_OTROS' | translate }}</h4>
+          </div>
+          <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS' | translate }}</p>
+      </div>
+      <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+          <div class="titol d-flex justify-content-center">
+              <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+              </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_OTROS2' | translate }}</h4>
+          </div>
+          <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS2' | translate }}</p>
+      </div>
+      <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+          <div class="titol d-flex justify-content-center">
+              <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+              </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_OTROS3' | translate }}</h4>
+          </div>
+          <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS3' | translate }}</p>
+      </div>
+    </div>
+    <div class="div-spacer"></div>
+    <div class="row d-flex justify-content-center w-100">
+      <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+          <div class="titol d-flex justify-content-center">
+              <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+              </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_OTROS4' | translate }}</h4>
+          </div>
+          <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS4' | translate }}</p>
+      </div>
+      <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_OTROS5' | translate }}</h4>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS5' | translate }}</p>
+      </div>
+      <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_OTROS9' | translate }}</h4>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS9' | translate }}</p>
+      </div>
+    </div>
+    <div class="div-spacer"></div>
+    <div class="row d-flex justify-content-center w-100">
+        <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+            <div class="titol d-flex justify-content-center">
+                <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_OTROS6' | translate }}</h4>
+            </div>
+            <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS6' | translate }}</p>
+          </div>
+      <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_OTROS7' | translate }}</h4>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS7' | translate }}</p>
+      </div>
+      <div class="contingut col-md-4 mb-md-0 mb-3 text-center">
+        <div class="titol d-flex justify-content-center">
+            <h4 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_OTROS8' | translate }}</h4>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS8' | translate }}</p>
+      </div>
+    </div>
+
+    <div class="div-spacer" id="plandolibarr"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+
+<!-- Block DOLIBARR ERP y CRM -->
+  <div class="row d-flex justify-content-center">
+    <div class="plans col-md-9 mb-md-0 mb-3">
+        <div class="titolPlan d-flex align-items-center justify-content-center">
+            <h5>{{ 'DOLIBARR.TITLE.TITLE_BLOQUE_DOLIBARR_ERP_CRM' | translate }}</h5>
+        </div>
+        <br>
+        <br>
+        <br>
+        <ul>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 mb-md-0 mb-3">
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM2' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM3' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM4' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM5' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM6' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM7' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM8' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM9' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM10' | translate }}</span></li>
+                </div>
+                <div class="col-md-6 mb-md-0 mb-3">
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM11' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM12' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM13' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM14' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM15' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM16' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM17' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM18' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_BLOQUE_DOLIBARR_ERP_CRM19' | translate }}</span></li>
+                </div>
+            </div>
+        </ul>
+        <br>
+        <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'DOLIBARR.BUTTON.TEXTO_FINAL_PAGINA' | translate }}</button>
+        <br>
+        <br>
+    </div>
+  </div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center align-items-center">
+    <div class="planSeguretat col-xl-auto col-lg-4 mb-md-0 mb-3 text-center">
+        <div class="titolPlanSeguretat d-flex align-items-center justify-content-center">
+            <h5>{{ 'DOLIBARR.TITLE.TITLE_PLAN_PRIMERO' | translate }}</h5>
+        </div>
+        <br>
+        <div class="preuPlanSeguretat d-flex align-items-center justify-content-center">
+            <h5>{{ 'DOLIBARR.TITLE.TITLE_PRECIO_PLAN_PRIMERO' | translate }}</h5>
+        </div>
+        <br>
+        <ul>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_PRIMERO' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_PRIMERO2' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_PRIMERO3' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_PRIMERO4' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_PRIMERO5' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_PRIMERO6' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_PRIMERO7' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_PRIMERO8' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_PRIMERO9' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_PRIMERO10' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_PRIMERO11' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_PRIMERO12' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_PRIMERO13' | translate }}</span></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <div class="planFooter">
+            <hr>
+            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'DOLIBARR.BUTTON.TEXTO_FINAL_PAGINA' | translate }}</button>
+        </div>
+    </div>
+    <div class="planSeguretat col-xl-auto col-lg-4 mb-md-0 mb-3 text-center">
+        <div class="titolPlanSeguretat d-flex align-items-center justify-content-center">
+            <h5>{{ 'DOLIBARR.TITLE.TITLE_PLAN_SEGUNDO' | translate }}</h5>
+        </div>
+        <br>
+        <div class="preuPlanSeguretat d-flex align-items-center justify-content-center">
+            <h5>{{ 'DOLIBARR.TITLE.TITLE_PRECIO_PLAN_SEGUNDO' | translate }}</h5>
+        </div>
+        <br>
+        <ul>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_SEGUNDO' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_SEGUNDO2' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_SEGUNDO3' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_SEGUNDO4' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_SEGUNDO5' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_SEGUNDO6' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_SEGUNDO7' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_SEGUNDO8' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_SEGUNDO9' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_SEGUNDO10' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_SEGUNDO11' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_SEGUNDO12' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_SEGUNDO13' | translate }}</span></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <div class="planFooter">
+            <hr>
+            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'DOLIBARR.BUTTON.TEXTO_FINAL_PAGINA' | translate }}</button>
+        </div>
+    </div>
+    <div class="planSeguretat col-xl-auto col-lg-4 mb-md-0 mb-3 text-center">
+        <div class="titolPlanSeguretat d-flex align-items-center justify-content-center">
+            <h5>{{ 'DOLIBARR.TITLE.TITLE_PLAN_TERCERO' | translate }}</h5>
+        </div>
+        <br>
+        <div class="preuPlanSeguretat d-flex align-items-center justify-content-center">
+            <h5>{{ 'DOLIBARR.TITLE.TITLE_PRECIO_PLAN_TERCERO' | translate }}</h5>
+        </div>
+        <br>
+        <ul>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_TERCERO' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_TERCERO2' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_TERCERO3' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_TERCERO4' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_TERCERO5' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_TERCERO6' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_TERCERO7' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_TERCERO8' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_TERCERO9' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_TERCERO10' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_TERCERO11' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_TERCERO12' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_TERCERO13' | translate }}</span></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <div class="planFooter align-self-end">
+            <hr>
+            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'DOLIBARR.BUTTON.TEXTO_FINAL_PAGINA' | translate }}</button>
+        </div>
+    </div>
+    <div class="planSeguretat col-xl-auto col-lg-4 mb-md-0 mb-3 text-center">
+        <div class="titolPlanSeguretat d-flex align-items-center justify-content-center">
+            <h5>{{ 'DOLIBARR.TITLE.TITLE_PLAN_CUARTO' | translate }}</h5>
+        </div>
+        <br>
+        <div class="preuPlanSeguretat d-flex align-items-center justify-content-center">
+            <h5>{{ 'DOLIBARR.TITLE.TITLE_PRECIO_PLAN_CUARTO' | translate }}</h5>
+        </div>
+        <br>
+        <ul>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_CUARTO' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_CUARTO2' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_CUARTO3' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_CUARTO4' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_CUARTO5' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_CUARTO6' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_CUARTO7' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_CUARTO8' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_CUARTO9' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_CUARTO10' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_CUARTO11' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_CUARTO12' | translate }}</span></li>
+            <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_PLAN_CUARTO13' | translate }}</span></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <div class="planFooter align-self-end">
+            <hr>
+            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'DOLIBARR.BUTTON.TEXTO_FINAL_PAGINA' | translate }}</button>
+        </div>
+    </div>
+</div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center align-items-center">
+    <div class="planSeguretat2 col-md-9 mb-md-0 mb-3 text-center">
+        <div class="titolPlanSeguretat d-flex align-items-center justify-content-center">
+            <h5>{{ 'DOLIBARR.TITLE.TITLE_COPIAS_SEGURIDAD' | translate }}</h5>
+        </div>
+        <br>
+        <div class="preuPlanSeguretat d-flex align-items-center justify-content-center">
+            <h5>{{ 'DOLIBARR.TITLE.TITLE_PRECIO_COPIAS_SEGURIDAD' | translate }}</h5>
+        </div>
+        <br>
+        <ul>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 mb-md-0 mb-3">
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_COPIAS_SEGURIDAD' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_COPIAS_SEGURIDAD2' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_COPIAS_SEGURIDAD3' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_COPIAS_SEGURIDAD4' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_COPIAS_SEGURIDAD5' | translate }}</span></li>
+                </div>
+                <div class="col-md-6 mb-md-0 mb-3">
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_COPIAS_SEGURIDAD7' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_COPIAS_SEGURIDAD8' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_COPIAS_SEGURIDAD9' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_COPIAS_SEGURIDAD10' | translate }}</span></li>
+                    <li><span>{{ 'DOLIBARR.CONTENT.TEXTO_COPIAS_SEGURIDAD11' | translate }}</span></li>
+                </div>
+            </div>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <div class="planFooter align-self-end">
+            <hr>
+            <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'DOLIBARR.BUTTON.TEXTO_FINAL_PAGINA' | translate }}</button>
+    </div>
+    </div>
+</div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<!-- SegonaImatge -->
+<div class="segonaImatge">  <!---->
+    <div class="contingutSegonaImatge1 text-center">
+      <h4>{{ 'DOLIBARR.TITLE.TITLE_IMAGEN_DEMO' | translate }}</h4>
+      <h5 class="w-75 mx-auto">
+        {{ 'DOLIBARR.TITLE.TITLE_IMAGEN_DEMO2' | translate }}</h5>
+    </div>
+  
+    <div class="contingutSegonaImatge2">
+      <p><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.CONTENT.TEXTO_IMAGEN_DEMO' | translate }}</p>
+        <p class="segonParraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.CONTENT.TEXTO_IMAGEN_DEMO2' | translate }}</p> 
+    </div>
+  </div>
+
+<!-- TerceraImatge -->
+<div class="terceraImatge">  <!---->
+    <div class="contingutSegonaImatge1 text-center">
+      <h4>{{ 'DOLIBARR.TITLE.TITLE_IMAGEN_PERSONALIZAMOS_DOLIBARR' | translate }}</h4>
+      <h5>{{ 'DOLIBARR.TITLE.TITLE_IMAGEN_PERSONALIZAMOS_DOLIBARR2' | translate }}</h5>
+    </div>
+  
+    <div class="contingutSegonaImatge2">
+        <p><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.CONTENT.TEXTO_IMAGEN_PERSONALIZAMOS_DOLIBARR' | translate }}</p>
+        <p><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.CONTENT.TEXTO_IMAGEN_PERSONALIZAMOS_DOLIBARR2' | translate }}</p> 
+        <p class="tercerParraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.CONTENT.TEXTO_IMAGEN_PERSONALIZAMOS_DOLIBARR3' | translate }}</p> 
+        </div>
+  </div>
+
+<!-- QuartaImatge -->
+<div class="quartaImatge">
+    <div class="textQuartaImatge">
+        <div class="titolQuartaImatge">
+            <h4>{{ 'DOLIBARR.TITLE.TITLE_IMAGEN_VINCULAMOS_DOLIBARR' | translate }}</h4>
+            <h5>{{ 'DOLIBARR.TITLE.TITLE_IMAGEN_VINCULAMOS_DOLIBARR2' | translate }}</h5>
+        </div>
+        <p class="primerParraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.CONTENT.TEXTO_IMAGEN_VINCULAMOS_DOLIBARR' | translate }}</p>
+        <p class="segonParraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.CONTENT.TEXTO_IMAGEN_VINCULAMOS_DOLIBARR2' | translate }}</p>
+        <p class="tercerParraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.CONTENT.TEXTO_IMAGEN_VINCULAMOS_DOLIBARR3' | translate }}</p>
+        <p class="quartParraf"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.CONTENT.TEXTO_IMAGEN_VINCULAMOS_DOLIBARR4' | translate }}</p>
+    </div>
+</div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<h4 class="titolPosicionament text-center w-75"><span>{{ 'DOLIBARR.TITLE.TITLE_VENTAJAS_DOLIBARR' | translate }}</span></h4>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center w-100">
+  <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAJAS_DOLIBARR' | translate }}</h5>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAJAS_DOLIBARR' | translate }}</p>
+  </div>
+  <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAJAS_DOLIBARR2' | translate }}</h5>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAJAS_DOLIBARR2' | translate }}</p>
+  </div>
+</div>
+
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center w-100">
+  <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAJAS_DOLIBARR3' | translate }}</h5>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAJAS_DOLIBARR3' | translate }}</p>
+  </div>
+  <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+      <div class="titol d-flex justify-content-center">
+          <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAJAS_DOLIBARR4' | translate }}</h5>
+      </div>
+      <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAJAS_DOLIBARR4' | translate }}</p>
+  </div>
+</div>
+
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center w-100">
+  <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+    <div class="titol d-flex justify-content-center">
+        <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAJAS_DOLIBARR5' | translate }}</h5>
+    </div>
+    <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAJAS_DOLIBARR5' | translate }}</p>
+  </div>
+  <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+    <div class="titol d-flex justify-content-center">
+        <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAJAS_DOLIBARR6' | translate }}</h5>
+    </div>
+    <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAJAS_DOLIBARR6' | translate }}</p>
+  </div>
+</div>
+
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center w-100">
+  <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+    <div class="titol d-flex justify-content-center">
+        <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAJAS_DOLIBARR7' | translate }}</h5>
+    </div>
+    <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAJAS_DOLIBARR7' | translate }}</p>
+  </div>
+  <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+    <div class="titol d-flex justify-content-center">
+        <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_VENTAJAS_DOLIBARR8' | translate }}</h5>
+    </div>
+    <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_VENTAJAS_DOLIBARR8' | translate }}</p>
+  </div>
+</div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<h4 class="titolPosicionament text-center w-50"><span>{{ 'DOLIBARR.TITLE.TITLE_OTROS_SERVICIOS' | translate }}</span></h4>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center">
+    <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="icone bi bi-hdd-network" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M14 3H2a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+            <path d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+            <path fill-rule="evenodd" d="M7.5 10V7h1v3a1.5 1.5 0 0 1 1.5 1.5h5.5a.5.5 0 0 1 0 1H10A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5H.5a.5.5 0 0 1 0-1H6A1.5 1.5 0 0 1 7.5 10zm0 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+          </svg>
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_OTROS_SERVICIOS' | translate }}</h5>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS_SERVICIOS' | translate }}</p>
+    </div>
+    <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="icone bi bi-cloud-arrow-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+            <path fill-rule="evenodd" d="M7.646 5.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2z"/>
+          </svg>
+        <br>
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_OTROS_SERVICIOS2' | translate }}</h5>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS_SERVICIOS21' | translate }}<a routerLink="/manteniments-informatics">{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS_SERVICIOS2_LINK' | translate }}</a>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS_SERVICIOS22' | translate }}</p>
+    </div>
+    <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="icone bi bi-shield-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M5.443 1.991a60.17 60.17 0 0 0-2.725.802.454.454 0 0 0-.315.366C1.87 7.056 3.1 9.9 4.567 11.773c.736.94 1.533 1.636 2.197 2.093.333.228.626.394.857.5.116.053.21.089.282.11A.73.73 0 0 0 8 14.5c.007-.001.038-.005.097-.023.072-.022.166-.058.282-.111.23-.106.525-.272.857-.5a10.197 10.197 0 0 0 2.197-2.093C12.9 9.9 14.13 7.056 13.597 3.159a.454.454 0 0 0-.315-.366c-.626-.2-1.682-.526-2.725-.802C9.491 1.71 8.51 1.5 8 1.5c-.51 0-1.49.21-2.557.491zm-.256-.966C6.23.749 7.337.5 8 .5c.662 0 1.77.249 2.813.525a61.09 61.09 0 0 1 2.772.815c.528.168.926.623 1.003 1.184.573 4.197-.756 7.307-2.367 9.365a11.191 11.191 0 0 1-2.418 2.3 6.942 6.942 0 0 1-1.007.586c-.27.124-.558.225-.796.225s-.526-.101-.796-.225a6.908 6.908 0 0 1-1.007-.586 11.192 11.192 0 0 1-2.417-2.3C2.167 10.331.839 7.221 1.412 3.024A1.454 1.454 0 0 1 2.415 1.84a61.11 61.11 0 0 1 2.772-.815z"/>
+            <path fill-rule="evenodd" d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+          </svg>
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_OTROS_SERVICIOS3' | translate }}</h5>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS_SERVICIOS31' | translate }}<a routerLink="/seguretat">{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS_SERVICIOS3_LINK' | translate }}</a>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS_SERVICIOS32' | translate }}</p>
+    </div>
+    <div class="contingut col-md-5 mb-md-0 mb-3 text-center">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="icone bi bi-people" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.995-.944v-.002.002zM7.022 13h7.956a.274.274 0 0 0 .014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C13.688 10.629 12.718 10 11 10c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 0 0 .022.004zm7.973.056v-.002.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10c-1.668.02-2.615.64-3.16 1.276C1.163 11.97 1 12.739 1 13h3c0-1.045.323-2.086.92-3zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+          </svg>
+        <div class="titol d-flex justify-content-center">
+            <h5 class="subtitolPosicionament"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_OTROS_SERVICIOS4' | translate }}</h5>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_OTROS_SERVICIOS4' | translate }}</p>
+    </div>
+</div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<h4 class="titolPosicionament text-center w-50"><span>{{ 'DOLIBARR.TITLE.TITLE_PREGUNTAS_FRECUENTES' | translate }}</span></h4>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center">
+    <div class="preguntesFrequents col-10">
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES2' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES2' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES3' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES3' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES4' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES4' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES5' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES5' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES6' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES6' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES7' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES7' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES8' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES8' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES9' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES9' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES10' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES10' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES11' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES11' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES12' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES12' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES13' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES13' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES14' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES14' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES15' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES15' | translate }}</p>
+        <div class="pregunta d-flex align-items-center w-100">
+            <label><b>{{ 'DOLIBARR.TITLE.TITLE_APARTADO_PREGUNTAS_FRECUENTES16' | translate }}</b></label>
+        </div>
+        <p>{{ 'DOLIBARR.CONTENT.TEXTO_APARTADO_PREGUNTAS_FRECUENTES16' | translate }}</p>
+    </div>
+</div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="row d-flex justify-content-center">
+    <div class="descripcioDolibarr col-7">
+        <ul>
+            <li>{{ 'DOLIBARR.CONTENT.TEXTO_FINAL_PAGINA' | translate }}</li>
+        </ul>
+        <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">{{ 'DOLIBARR.BUTTON.TEXTO_FINAL_PAGINA' | translate }}</button>
+    </div>
+</div>
+
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+<div class="div-spacer"></div>
+
+<div class="formulariContacte row d-flex justify-content-center align-items-center">
+    <form class="form2 w-100" (ngSubmit)="enviarDadesTrucar()" [formGroup]="form2">
+      <fieldset class="w-75" id="formContact">
+        <h5>{{ 'FORMS.TITLE2' | translate }}</h5>
+        <hr>
+        <small class="form-text text-muted"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+        </svg>{{ 'FORMS.DESCRIPTION1' | translate }}</small>
+        <small class="form-text text-muted">{{ 'FORMS.DESCRIPTION2' | translate }}</small>
+        <br>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+              <label for="inputNom">{{ 'FORMS.INPUT1' | translate }}</label>
+              <input type="text" class="form-control" id="inputNom" placeholder="{{ 'FORMS.PLACEHOLDER1' | translate }}" name="nom" [(ngModel)]="dadesTrucar.nom"
+              formControlName="nom" [ngClass]="{'is-invalid' : form2.get('nom').touched && form2.get('nom').invalid}">
+                        <div class="invalid-feedback">
+                            {{ 'FORMS.INVALID_FEEDBACK1' | translate }}
+                        </div>
+          </div>
+          <div class="form-group col-md-6">
+              <label for="inputNomEmpresa">{{ 'FORMS.INPUT2' | translate }}</label>
+              <input type="text" class="form-control" id="inputNomEmpresa" placeholder="{{ 'FORMS.PLACEHOLDER2' | translate }}" name="nomEmpresa" [(ngModel)]="dadesTrucar.nomEmpresa"
+              formControlName="nomEmpresa" [ngClass]="{'is-invalid' : form2.get('nomEmpresa').touched && form2.get('nomEmpresa').invalid}">
+                        <div class="invalid-feedback">
+                            {{ 'FORMS.INVALID_FEEDBACK1' | translate }}
+                        </div>
+          </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail">{{ 'FORMS.INPUT3' | translate }}</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="{{ 'FORMS.PLACEHOLDER3' | translate }}" name="email" [(ngModel)]="dadesTrucar.email"
+                formControlName="email" [ngClass]="{'is-invalid' : form2.get('email').touched && form2.get('email').invalid}">
+							<div *ngIf="form2.get('email').touched && form2.get('email').invalid" class="invalid-feedback">
+								<div *ngIf="form2.get('email').errors?.required">{{ 'FORMS.INVALID_FEEDBACK1' | translate }}</div>
+								<div *ngIf="form2.get('email').errors.email">{{ 'FORMS.INVALID_FEEDBACK2' | translate }}</div>
+							</div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputTelefon">{{ 'FORMS.INPUT4' | translate }}</label>
+            <input type="text" class="form-control" id="inputTelefon" placeholder="{{ 'FORMS.PLACEHOLDER4' | translate }}" name="telefon" [(ngModel)]="dadesTrucar.telefon"
+            formControlName="telefon" [ngClass]="{'is-invalid' : form2.get('telefon').touched && form2.get('telefon').invalid}">
+							<div *ngIf="form2.get('telefon').touched && form2.get('telefon').invalid" class="invalid-feedback">
+								<div *ngIf="form2.get('telefon').errors?.required">{{ 'FORMS.INVALID_FEEDBACK1' | translate }}</div>
+								<div *ngIf="form2.get('telefon').errors.pattern">{{ 'FORMS.INVALID_FEEDBACK3' | translate }}</div>
+							</div>
+            </div>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" required
+          formControlName="acceptarPolitiques" [ngClass]="{'is-invalid' : form2.get('acceptarPolitiques').touched && form2.get('acceptarPolitiques').invalid}">
+          <label class="form-check-label" for="exampleCheck1">{{ 'FORMS.POLICY1' | translate }}<a routerLink="/politica-privacitat">{{ 'FORMS.POLICY3' | translate }}</a>.</label>
+          <div *ngIf="form2.get('acceptarPolitiques').touched && form2.get('acceptarPolitiques').errors?.required" class="invalid-feedback">
+            {{ 'FORMS.INVALID_FEEDBACK4' | translate }}
+        </div>
+        </div>
+        <input type="submit" class="btn btn-success" value="Enviar" [disabled]="!form2.valid">
+      </fieldset>
+      <div class="div-spacer"></div>
+      <div class="div-spacer"></div>
+    </form>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">{{ 'FORMS.TITLE1' | translate }}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form (ngSubmit)="enviarDadesContacte()" [formGroup]="form">
+                <small class="form-text text-muted"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                </svg>{{ 'FORMS.DESCRIPTION1' | translate }}</small>
+                <small class="form-text text-muted">{{ 'FORMS.DESCRIPTION2' | translate }}</small>
+                <br>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputNom">{{ 'FORMS.INPUT1' | translate }}</label>
+                        <input type="text" class="form-control" id="inputNom" placeholder="{{ 'FORMS.PLACEHOLDER1' | translate }}" name="nom" [(ngModel)]="dadesContacte.nom"
+                        formControlName="nom" [ngClass]="{'is-invalid' : form.get('nom').touched && form.get('nom').invalid}">
+                        <div class="invalid-feedback">
+                            {{ 'FORMS.INVALID_FEEDBACK1' | translate }}
+                        </div>
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                        <label for="inputNomEmpresa">{{ 'FORMS.INPUT2' | translate }}</label>
+                        <input type="text" class="form-control" id="inputNomEmpresa" placeholder="{{ 'FORMS.PLACEHOLDER2' | translate }}" name="nomEmpresa" [(ngModel)]="dadesContacte.nomEmpresa"
+                        formControlName="nomEmpresa" [ngClass]="{'is-invalid' : form.get('nomEmpresa').touched && form.get('nomEmpresa').invalid}">
+                        <div class="invalid-feedback">
+                            {{ 'FORMS.INVALID_FEEDBACK1' | translate }}
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">{{ 'FORMS.INPUT3' | translate }}</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="{{ 'FORMS.PLACEHOLDER3' | translate }}" name="email" [(ngModel)]="dadesContacte.email"
+                        formControlName="email" [ngClass]="{'is-invalid' : form.get('email').touched && form.get('email').invalid}">
+							<div *ngIf="form.get('email').touched && form.get('email').invalid" class="invalid-feedback">
+								<div *ngIf="form.get('email').errors?.required">{{ 'FORMS.INVALID_FEEDBACK1' | translate }}</div>
+								<div *ngIf="form.get('email').errors.email">{{ 'FORMS.INVALID_FEEDBACK2' | translate }}</div>
+							</div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputTelefon">{{ 'FORMS.INPUT4' | translate }}</label>
+                    <input type="text" class="form-control" id="inputTelefon" placeholder="{{ 'FORMS.PLACEHOLDER4' | translate }}" name="telefon" [(ngModel)]="dadesContacte.telefon"
+                    formControlName="telefon" [ngClass]="{'is-invalid' : form.get('telefon').touched && form.get('telefon').invalid}">
+							<div *ngIf="form.get('telefon').touched && form.get('telefon').invalid" class="invalid-feedback">
+								<div *ngIf="form.get('telefon').errors?.required">{{ 'FORMS.INVALID_FEEDBACK1' | translate }}</div>
+								<div *ngIf="form.get('telefon').errors.pattern">{{ 'FORMS.INVALID_FEEDBACK3' | translate }}</div>
+							</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="selectDepartament">{{ 'FORMS.INPUT5' | translate }}</label>
+                    <select class="form-control" id="selectDepartament" name="departament" [(ngModel)]="dadesContacte.departament"
+                    formControlName="departament" [ngClass]="{'is-invalid' : form.get('departament').touched && form.get('departament').invalid}">
+                        <option selected="selected" disabled>{{ 'FORMS.OPTION1' | translate }}</option>
+                        <option value="info">{{ 'FORMS.OPTION2' | translate }}</option>
+                        <option value="marketing">{{ 'FORMS.OPTION3' | translate }}</option>
+                        <option value="suport">{{ 'FORMS.OPTION4' | translate }}</option>
+                        <option value="comptabilitat">{{ 'FORMS.OPTION5' | translate }}</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        {{ 'FORMS.INVALID_FEEDBACK5' | translate }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputNom">{{ 'FORMS.INPUT6' | translate }}</label>
+                    <textarea class="form-control" id="textAreaInfo" rows="3" name="informacio" [(ngModel)]="dadesContacte.informacio"
+                    formControlName="informacio" [ngClass]="{'is-invalid' : form.get('informacio').touched && form.get('informacio').invalid}"></textarea>
+                    <div class="invalid-feedback">
+                        {{ 'FORMS.INVALID_FEEDBACK1' | translate }}
+                    </div>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1"required
+                    formControlName="acceptarPolitiques" [ngClass]="{'is-invalid' : form.get('acceptarPolitiques').touched && form.get('acceptarPolitiques').invalid}">
+                    <label class="form-check-label" for="exampleCheck1">{{ 'FORMS.POLICY1' | translate }}<a routerLink="/politica-privacitat" (click)="tancarPopup()">{{ 'FORMS.POLICY3' | translate }}</a>.</label>
+                    <div *ngIf="form.get('acceptarPolitiques').touched && form.get('acceptarPolitiques').errors?.required" class="invalid-feedback">
+                        {{ 'FORMS.INVALID_FEEDBACK4' | translate }}
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="tancarPopup" class="btn btn-secondary" data-dismiss="modal">{{ 'FORMS.BUTTON1' | translate }}</button>
+                    <input type="submit" value="{{ 'FORMS.BUTTON2' | translate }}" class="btn btn-success" [disabled]="!form.valid">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

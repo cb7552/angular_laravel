@@ -1,0 +1,80 @@
+.div-spacer 
+{
+    display: block;
+    clear: both;
+    height: 20px;
+}
+#btnTop 
+{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnTop svg
+{
+    width: 30px;
+    height: 30px;
+}
+.contingutBlog
+{
+    background-color: rgb(206, 206, 206);
+}
+.articles
+{
+    background-color: rgb(206, 206, 206);
+}
+.article
+{
+    background-color: white;
+    border-radius: 15px;
+    margin: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.bannerDolibarr
+{
+    height: 800px;
+    width: 250px;
+}
+@media only screen and (max-width: 704px)
+{
+    .bannerDolibarr
+    {
+        height: 350px;
+        width: 70px;
+    }
+}
+.nav-link:hover
+{
+    text-shadow: 0.5px 0.4px white;
+}
+.article img
+{
+    border-radius: 15px;
+}
+.article h4
+{
+    text-align: center;
+}
+.article p
+{
+    padding: 20px;
+}
+.article:hover
+{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.cosArticle
+{
+    padding: 50px;
+}

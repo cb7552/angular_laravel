@@ -1,0 +1,342 @@
+#btnTop 
+{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnTop svg
+{
+    width: 30px;
+    height: 30px;
+}
+.div-spacer 
+{
+    display: block;
+    clear: both;
+    height: 20px;
+}
+//Estils imatges
+//Primera imatge
+.imatgeInicial
+{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.imatgeInicial h2
+{
+    color: black;
+    position: absolute;
+    top: 17%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+}
+.imatgeInicial .primerParraf
+{
+    position: absolute;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    left: 23%;
+    width: 35%;
+}
+.imatgeInicial .segonParraf
+{
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    left: 23%;
+    width: 35%;
+}
+@media only screen and (max-width:1565px)
+{
+    .imatgeInicial .primerParraf
+    {
+        top: 45%;
+    }
+    .imatgeInicial .segonParraf
+    {
+        top: 75%;;
+    }
+}
+@media only screen and (max-width:1279px)
+{
+    .imatgeInicial h2, .imatgeInicial .primerParraf, .imatgeInicial .segonParraf
+    {
+        display: none;
+    }
+}
+//Segona imatge
+.segonaImatge
+{
+    background-image: url('../../assets/imatgesMarketing/banner-marketing2.png');
+    background-size: 100% 100%;
+    min-height: 70vh;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.segonaImatge .textSegonaImatge1 .titolSegonaImatge
+{
+    position: absolute;
+    top: 7%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+.segonaImatge .textSegonaImatge1 .primerParraf
+{
+    position: absolute;
+    top: 32%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+}
+.segonaImatge .textSegonaImatge1 .segonParraf
+{
+    position: absolute;
+    top: 74%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+}
+.segonaImatge .textSegonaImatge2 .titolSegonaImatge2
+{
+    position: absolute;
+    top: 7%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+}
+.segonaImatge .textSegonaImatge2 .primerParraf
+{
+    position: absolute;
+    top: 36%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    width: 27%;
+}
+.segonaImatge .textSegonaImatge2 .segonParraf
+{
+    position: absolute;
+    top: 75%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+}
+@media only screen and (max-width: 1231px)
+{
+    .segonaImatge
+    {
+        background: none;
+        background-color: #003b74;
+        text-align: center;
+        position: inherit!important;
+        min-height: inherit;
+    }
+    .segonaImatge .textSegonaImatge1 .titolSegonaImatge
+    {
+        position: inherit!important;
+        transform: inherit!important;
+        padding-top: 20px;
+    }
+    .segonaImatge .textSegonaImatge1 .primerParraf, .segonaImatge .textSegonaImatge1 .segonParraf, .segonaImatge .textSegonaImatge2 .titolSegonaImatge2, .segonaImatge .textSegonaImatge2 .primerParraf, .segonaImatge .textSegonaImatge2 .segonParraf  
+    {
+        position: inherit!important;
+        transform: inherit!important;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .segonaImatge .textSegonaImatge2 .segonParraf
+    {
+        padding-bottom: 20px;
+    }
+}
+.segonaImatge svg
+{
+    color: rgb(31, 206, 69);
+    width: 25px;
+    height: 25px;
+}
+.franja
+{
+    background-color: black;
+    color: white;
+    min-height: 90px;
+    height: 100%;
+    text-align: center;
+}
+.franja h1
+{
+    display: block;
+    margin: auto 0;
+}
+.row
+{
+    height: 100%;
+}
+.descripcioMarketing
+{
+    background-color: whitesmoke;
+    height: 100%;
+    width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+.descripcioMarketing ul
+{
+    list-style: none;
+    text-align: left;
+}
+.descripcioMarketing ul li
+{
+    margin-right: 30px;
+}
+.descripcioMarketing ul li:before
+{
+    content: '✓';
+    color: rgb(31, 206, 69);
+}
+.parraf
+{
+    text-align: justify;
+}
+.subtitol
+{
+    font-weight: bold;
+    color: black;
+}
+.titolPosicionament
+{
+    border-bottom: 1px solid rgb(180, 180, 180); 
+    line-height: 0.1em;
+    margin: 0 auto;
+}
+.titolPosicionament span
+{
+    padding: 0 10px;
+    background-color: white;
+
+}
+@media screen and (max-width: 970px)
+{
+    .titolPosicionament span
+    {
+        line-height: 1.5!important;
+        padding: 0!important;
+        background-color: inherit;
+    }
+
+    #textFinalMarqueting {
+        display: none;
+    }
+}
+.titol svg
+{
+    width: 25px;
+    height: 25px;
+    color: blue;
+}
+.subtitolPosicionament
+{
+    color: rgb(31, 206, 69);
+    font-weight: bold;
+}
+.plans
+{
+    border: 1px solid rgb(180, 180, 180);
+    min-height: 300px;
+    height: 100%;
+    border-radius: 5px;
+    margin: 20px;
+    position: relative;
+}
+.titolPlan
+{
+    text-align: center;
+    border: 1px solid rgb(180, 180, 180);
+    border-left: 3px solid rgb(31, 206, 69);
+    // border-right: 3px solid rgb(31, 206, 69);
+    background-color: whitesmoke;
+    height: 50px;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
+}
+.titolPlan h5
+{
+    font-weight: bold;
+}
+.plans ul 
+{
+    list-style: none;
+    text-align: justify;
+}
+.plans ul li
+{
+    margin-left: -25px;
+    margin-top: 5px;
+    text-align: left;
+}
+.plans ul li span
+{
+    position: relative;
+    left: 5px;
+    text-align: left;
+}
+.plans ul li:before 
+{
+    content: '✓';
+    color: rgb(31, 206, 69);
+}
+.plans .btn
+{
+    position: absolute;
+    bottom: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 180px;
+    color: white;
+}
+p, li, .modal, button
+{
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+small svg
+{
+    color: rgb(31, 206, 69);
+    width: 15px;
+    height: 15px;
+}
+.formContact
+{
+    background-color: whitesmoke;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 10px;
+    padding: 20px;
+}
+#formContact
+{
+    margin: 0 auto;
+}
+#formContact h5
+{
+    text-align: center;
+}
+.form2
+{
+    background-color: whitesmoke;
+    padding: 20px;
+}
+

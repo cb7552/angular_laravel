@@ -1,0 +1,31 @@
+footer
+{
+    background-color: black;
+    color: white;
+}
+footer li
+{
+    margin-top: 7px;
+}
+footer a
+{
+    text-decoration: none;
+}
+footer .list-unstyled a:hover
+{
+    text-shadow: 0.5px 0.5px white;
+}
+hr
+{
+    background-color: white;
+}
+.info
+{
+    text-align: center;
+}
+.imatgeGoogle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

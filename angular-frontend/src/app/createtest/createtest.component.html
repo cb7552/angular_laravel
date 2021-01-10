@@ -1,0 +1,105 @@
+<div class="background row d-flex justify-content-center align-items-center">
+	<div class="col-md-8 mb-md-0 mb-3 d-flex justify-content-center">
+		<div class="card">
+			<div class="card-header text-left">
+				<h3>Edit your Client</h3>
+				<hr>
+			</div>
+			<div class="card-body">
+				<small class="form-text">Required fields</small>
+				<br>
+				<form (ngSubmit)="onSubmit()" [formGroup]="form">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputNomFiscal">Tax name</label>
+							<input type="text" class="form-control" formControlName="nomFiscal">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputNomComercial">Trade name</label>
+							<input type="text" class="form-control" id="inputNomComercial" name="name_alias" [(ngModel)]="client.name_alias"
+							formControlName="nomComercial">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputDireccio">Address</label>
+							<input type="text" class="form-control" id="inputDireccio" name="address" [(ngModel)]="client.address"
+							formControlName="direccio">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputCodiPostal">Postal code</label>
+							<input type="text" class="form-control" id="inputCodiPostal" name="zip" [(ngModel)]="client.zip"
+							formControlName="codiPostal">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputPoblacio">Population </label>
+							<input type="text" class="form-control" id="inputPoblacio" name="town" [(ngModel)]="client.town"
+							formControlName="poblacio">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputProvincia">Province</label> 
+							<select class="form-control" name="fk_departement" [(ngModel)]="client.fk_departement"
+							formControlName="provincia">
+								<option selected="selected" disabled>{{ 'REGISTER.INFO1' | translate }}</option>
+								<option *ngFor="let provincia of provincies; index as i" value="{{provincia.rowid}}">{{provincia.nom}}</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputPais">Country</label>
+							<select class="form-control" name="fk_pays" [(ngModel)]="client.fk_pays"
+							formControlName="pais">
+								<option selected="selected" disabled>{{ 'REGISTER.INFO2' | translate }}</option>
+								<option *ngFor="let pais of paisos; index as i" value="{{pais.rowid}}">{{pais.code_iso}} - {{pais.label}}</option>
+							</select>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputTelefon">Phone </label>
+							<input type="text" class="form-control" id="inputTelefon"name="phone" [(ngModel)]="client.phone"
+							formControlName="telefon">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputEmail">E-mail</label>
+							<input type="text" class="form-control" id="inputEmail" name="email" [(ngModel)]="client.email"
+							formControlName="email">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputNif">CIF/NIF*</label>
+							<input type="text" class="form-control" id="inputNif" name="siren" [(ngModel)]="client.siren"
+							formControlName="cifNif">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputContrasenya">Password </label>
+							<input type="password" class="form-control" id="inputContrasenya" name="password" [(ngModel)]="client.password"
+							formControlName="contrasenya">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputConfirmarContrasenya">Confirm password</label>
+							<input type="password" class="form-control" id="inputConfirmarContrasenya" (blur)="passwdMatch()" (keyup)="passwdMatch()"
+							formControlName="confContrasenya">
+						</div>
+					</div>
+					<div class="form-group form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1" required
+						formControlName="acceptarPolitiques" [ngClass]="{'is-invalid' : form.get('acceptarPolitiques').touched && form.get('acceptarPolitiques').invalid}">
+						<label class="check form-check-label" for="exampleCheck1">I agree to the <a routerLink="/politica-privacitat">Privacy Policy</a>.</label>
+						<div *ngIf="form.get('acceptarPolitiques').touched && form.get('acceptarPolitiques').errors?.required" class="invalid-feedback">
+							You must accept our policies.
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Create" class="btn float-right login_btn">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
